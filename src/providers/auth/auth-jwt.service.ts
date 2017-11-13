@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
 import { Observable } from 'rxjs/Rx';
 import { LocalStorageService, SessionStorageService } from 'ngx-webstorage';
 import { Api } from '../api/api';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class AuthServerProvider {
 
-  constructor(private http: Http,
+  constructor(private http: HttpClient,
               private $localStorage: LocalStorageService,
               private $sessionStorage: SessionStorageService) {
   }
@@ -23,16 +23,14 @@ export class AuthServerProvider {
       password: credentials.password,
       rememberMe: credentials.rememberMe
     };
-    return this.http.post(Api.API_URL + '/authenticate', data).map(authenticateSuccess.bind(this));
 
-    function authenticateSuccess(resp) {
-      const bearerToken = resp.headers.get('Authorization');
-      if (bearerToken && bearerToken.slice(0, 7) === 'Bearer ') {
-        const jwt = bearerToken.slice(7, bearerToken.length);
+    return this.http.post(Api.API_URL + '/authenticate', data).map((response: any) => {
+      const jwt = response['id_token'];
+      if (jwt) {
         this.storeAuthenticationToken(jwt, credentials.rememberMe);
         return jwt;
       }
-    }
+    });
   }
 
   loginWithToken(jwt, rememberMe) {

@@ -20,7 +20,7 @@ export class HomePage implements OnInit {
   ngOnInit() {
     this.principal.identity().then((account) => {
       if (account === null) {
-        this.app.getRootNav().setRoot(FirstRunPage);
+        this.app.getRootNavs()[0].setRoot(FirstRunPage);
       } else {
         this.account = account;
       }
@@ -33,6 +33,6 @@ export class HomePage implements OnInit {
 
   logout() {
     this.loginService.logout();
-    this.app.getRootNav().setRoot(FirstRunPage);
+    this.app.getRootNavs()[0].setRoot(FirstRunPage);
   }
 }
