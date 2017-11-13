@@ -1,6 +1,9 @@
 # The Ionic JHipster Starter 🤓
 
-![Ionic](src/assets/img/ionic-logo.png | width=200) ![JHipster](src/assets/img/hipster.png  | width=200)
+> Because Ionic Apps need some JHipster 💙 too!
+
+![Ionic](src/assets/img/ionic-logo.png) 
+![JHipster](src/assets/img/hipster.png)
 
 The Ionic JHipster Starter is a designed to be used with a JHipster backend with JWT Authentication.
 
