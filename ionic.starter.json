@@ -1,6 +1,6 @@
 {
   "name": "JHipster Starter",
-  "baseref": "9b3d060bca61d513450c330de84cb9b468cf7387",
+  "baseref": "5964277615322dd74d8d84528ce5d01b07acbed8",
   "welcome": "Welcome to the \u001b[34m\u001b[1mIonic\u001b[22m\u001b[39m \u001b[32m\u001b[1mJ\u001b[22m\u001b[39m\u001b[31m\u001b[1mHipster\u001b[22m\u001b[39m Starter!\n\nThe JHipster Starter ships with login and signup that will work with a JHipster backend with JWT Authentication. It also contains an entity blueprint that allows you to generate Ionic pages. \n\nFor more details, please see the project's README: \u001b[1mhttps://github.com/oktadeveloper/ionic-jhipster-starter/blob/master/README.md\u001b[22m",
   "packageJson": {
     "dependencies": {
@@ -11,7 +11,6 @@
     },
     "devDependencies": {
       "generator-jhipster": "^4.10.2",
-      "generator-jhipster-ionic": "^0.0.1",
       "@types/node": "^8.0.47"
     }
   }
