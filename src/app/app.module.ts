@@ -13,7 +13,6 @@ import { MyApp } from './app.component';
 import { LoginService } from '../providers/login/login.service';
 import { Principal } from '../providers/auth/principal.service';
 import { AccountService } from '../providers/auth/account.service';
-import { HttpModule } from '@angular/http';
 import { AuthServerProvider } from '../providers/auth/auth-jwt.service';
 import { LocalStorageService, SessionStorageService } from 'ngx-webstorage';
 import { AuthInterceptor } from '../providers/auth/auth-interceptor';
