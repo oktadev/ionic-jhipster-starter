@@ -1,4 +1,4 @@
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClient, HttpClientModule } from '@angular/common/http';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { Camera } from '@ionic-native/camera';
@@ -10,10 +10,16 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { Items } from '../mocks/providers/items';
-import { Settings } from '../providers/providers';
-import { User } from '../providers/providers';
-import { Api } from '../providers/providers';
+import { Api, Settings, User } from '../providers/providers';
 import { MyApp } from './app.component';
+import { LoginService } from '../providers/login/login.service';
+import { Principal } from '../providers/auth/principal.service';
+import { AccountService } from '../providers/auth/account.service';
+import { HttpModule } from '@angular/http';
+import { AuthServerProvider } from '../providers/auth/auth-jwt.service';
+import { LocalStorageService, SessionStorageService } from 'ngx-webstorage';
+import { AuthInterceptor } from '../providers/auth/auth-interceptor';
+import { EntityPageModule } from '../pages/entities/entity.module';
 
 // The translate loader needs to know where to load i18n files
 // in Ionic's static asset pipeline.
@@ -51,7 +57,8 @@ export function provideSettings(storage: Storage) {
       }
     }),
     IonicModule.forRoot(MyApp),
-    IonicStorageModule.forRoot()
+    IonicStorageModule.forRoot(),
+    EntityPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -61,12 +68,23 @@ export function provideSettings(storage: Storage) {
     Api,
     Items,
     User,
+    LoginService,
+    Principal,
+    AccountService,
+    AuthServerProvider,
+    LocalStorageService,
+    SessionStorageService,
     Camera,
     SplashScreen,
     StatusBar,
     { provide: Settings, useFactory: provideSettings, deps: [Storage] },
     // Keep this to enable Ionic's runtime error handling during development
     { provide: ErrorHandler, useClass: IonicErrorHandler }
+    {
+          provide: HTTP_INTERCEPTORS,
+          useClass: AuthInterceptor,
+          multi: true
+        }
   ]
 })
 export class AppModule { }

@@ -14,10 +14,13 @@ export class SignupPage {
   // The account fields for the login form.
   // If you're using the username field with or without email, make
   // sure to add it to the type
-  account: { name: string, email: string, password: string } = {
-    name: 'Test Human',
-    email: 'test@example.com',
-    password: 'test'
+  account: { login: string, email: string, firstName: string, lastName: string, password: string, langKey: string } = {
+    login: '',
+    email: '',
+    firstName: '',
+    lastName: '',
+    password: '',
+    langKey: 'en'
   };
 
   // Our translated text strings
@@ -34,12 +37,15 @@ export class SignupPage {
   }
 
   doSignup() {
+    // set login to same as email
+    this.account.login = this.account.email;
     // Attempt to login in through our User service
     this.user.signup(this.account).subscribe((resp) => {
       this.navCtrl.push(MainPage);
     }, (err) => {
-
-      this.navCtrl.push(MainPage);
+      //console.log('error in signup', err);
+      // ^^ results in 'You provided 'undefined' where a stream was expected'
+      //this.navCtrl.push(MainPage);
 
       // Unable to sign up
       let toast = this.toastCtrl.create({

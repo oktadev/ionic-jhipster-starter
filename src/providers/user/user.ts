@@ -3,6 +3,8 @@ import 'rxjs/add/operator/toPromise';
 import { Injectable } from '@angular/core';
 
 import { Api } from '../api/api';
+import { LoginService } from '../login/login.service';
+import { Observable } from 'rxjs/Observable';
 
 /**
  * Most apps have the concept of a User. This is a simple provider
@@ -27,26 +29,20 @@ import { Api } from '../api/api';
 export class User {
   _user: any;
 
-  constructor(public api: Api) { }
+  constructor(public api: Api, public loginService: LoginService) { }
 
   /**
    * Send a POST request to our login endpoint with the data
    * the user entered on the form.
    */
   login(accountInfo: any) {
-    let seq = this.api.post('login', accountInfo).share();
-
-    seq.subscribe((res: any) => {
-      // If the API returned a successful response, mark the user as logged in
-      if (res.status == 'success') {
-        this._loggedIn(res);
-      } else {
-      }
-    }, err => {
+    this.loginService.login(accountInfo).then((res) => {
+      this._loggedIn(res);
+      return Observable.of(res);
+    }).catch((err) => {
       console.error('ERROR', err);
+      return Observable.throw(err);
     });
-
-    return seq;
   }
 
   /**
@@ -54,24 +50,14 @@ export class User {
    * the user entered on the form.
    */
   signup(accountInfo: any) {
-    let seq = this.api.post('signup', accountInfo).share();
-
-    seq.subscribe((res: any) => {
-      // If the API returned a successful response, mark the user as logged in
-      if (res.status == 'success') {
-        this._loggedIn(res);
-      }
-    }, err => {
-      console.error('ERROR', err);
-    });
-
-    return seq;
+    return this.api.post('register', accountInfo).share();
   }
 
   /**
    * Log the user out, which forgets the session
    */
   logout() {
+    this.loginService.logout();
     this._user = null;
   }
 
