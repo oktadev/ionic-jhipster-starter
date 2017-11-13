@@ -6,8 +6,6 @@ import {
   HttpInterceptor, HttpErrorResponse, HttpResponse
 } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/catch';
 import { LocalStorageService, SessionStorageService } from 'ngx-webstorage';
 
 @Injectable()
@@ -26,7 +24,7 @@ export class AuthInterceptor implements HttpInterceptor {
       });
     }
 
-    return next.handle(request).map((event: HttpEvent<any>) => {
+    return next.handle(request).do(event => {
       if (event instanceof HttpResponse) {
         return event;
       }
