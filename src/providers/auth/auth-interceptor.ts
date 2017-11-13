@@ -24,7 +24,7 @@ export class AuthInterceptor implements HttpInterceptor {
       });
     }
 
-    return next.handle(request).do(event => {
+    return next.handle(request).do((event: any) => {
       if (event instanceof HttpResponse) {
         return event;
       }
