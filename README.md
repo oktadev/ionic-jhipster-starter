@@ -3,8 +3,8 @@
 > Because Ionic Apps need some JHipster 💙 too!
 
 <div>
-    <a href="https://ioniframework.com"><img src="src/assets/img/ionic-logo.png" alt="Ionic" width="200"></a>
-    <a href="http://www.jhipster.tech"><img src="src/assets/img/hipster.png" alt="JHipster" width="200"></a>
+    <a href="https://ionicframework.com"><img src="src/assets/img/ionic-logo.png" alt="Ionic"></a>
+    <a href="http://www.jhipster.tech"><img src="src/assets/img/jhipster-logo.png" alt="JHipster"></a>
 </div>
 
 The Ionic JHipster Starter is designed to be used with a JHipster backend that uses JWT Authentication.
