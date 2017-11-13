@@ -2,16 +2,10 @@
 
 > Because Ionic Apps need some JHipster 💙 too!
 
-<table>
-    <tr>
-        <td>
-            <a href="https://ioniframework.com"><img src="src/assets/img/ionic-logo.png" alt="Ionic" width="200"></a>
-        </td>
-        <td>
-            <a href="http://www.jhipster.tech"><img src="src/assets/img/hipster.png" alt="JHipster" width="200"></a>
-        </td>
-    </tr>
-</table>
+<div>
+    <a href="https://ioniframework.com"><img src="src/assets/img/ionic-logo.png" alt="Ionic" width="200"></a>
+    <a href="http://www.jhipster.tech"><img src="src/assets/img/hipster.png" alt="JHipster" width="200"></a>
+</div>
 
 The Ionic JHipster Starter is designed to be used with a JHipster backend that uses JWT Authentication.
 
