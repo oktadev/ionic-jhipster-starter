@@ -8,7 +8,9 @@ import { IonicPage, NavController } from 'ionic-angular';
 })
 export class EntityPage {
 
-  entities: Array<any> = [{name: 'Item', component: 'ItemPage'}];
+  entities: Array<any> = [
+      /* jhipster-needle-add-entity-page - JHipster will add entity pages here */
+  ];
 
   constructor(public nav: NavController) { }
 
