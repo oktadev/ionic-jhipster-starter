@@ -29,7 +29,7 @@ To use this starter, install the latest version of the Ionic CLI and run:
 ionic start myApp oktadeveloper/jhipster
 ```
 
-You can also install [Ionic for JHipster](https://github.com/oktadeveloper/ionic-jhipster-starter):
+You can also install [Ionic for JHipster](https://github.com/oktadeveloper/generator-jhipster-ionic):
 
 ```
 npm install -g generator-jhipster-ionic
