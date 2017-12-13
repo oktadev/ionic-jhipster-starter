@@ -11,11 +11,10 @@ import { LoginService } from '../../providers/login/login.service';
 })
 export class LoginPage {
   // The account fields for the login form.
-  // If you're using the username field with or without email, make
-  // sure to add it to the type
-  account: { username: string, password: string } = {
+  account: { username: string, password: string, rememberMe: boolean } = {
     username: '',
-    password: ''
+    password: '',
+    rememberMe: false,
   };
 
   // Our translated text strings

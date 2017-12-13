@@ -14,6 +14,10 @@
         <ion-label fixed>{{ 'PASSWORD' | translate }}</ion-label>
         <ion-input type="password" [(ngModel)]="account.password" name="password"></ion-input>
       </ion-item>
+      <ion-item>
+        <ion-label>{{ 'REMEMBER_ME' | translate }}</ion-label>
+        <ion-checkbox [(ngModel)]="rememberMe"></ion-checkbox>
+      </ion-item>
       <div padding>
         <button ion-button color="primary" block>{{ 'LOGIN_BUTTON' | translate }}</button>
       </div>
