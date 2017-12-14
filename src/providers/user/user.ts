@@ -45,6 +45,10 @@ export class User {
     });
   }
 
+  findAll(): Observable<any> {
+    return this.api.get('users');
+  }
+
   /**
    * Send a POST request to our signup endpoint with the data
    * the user entered on the form.
