@@ -21,20 +21,42 @@ This project is in an beta state, see its [v1.0 milestone](https://github.com/ok
 3. [Providers](#providers)
 4. [i18n](#i18n) (adding languages)
 
-## <a name="getting-started"></a>Getting Started
+## Getting Started
 
 To use this starter, install the latest version of the Ionic CLI and run:
 
 ```bash
-ionic start myApp oktadeveloper/jhipster
+ionic start ionic4j oktadeveloper/jhipster
 ```
 
-You can also install [Ionic for JHipster](https://github.com/oktadeveloper/generator-jhipster-ionic):
+You can also install it using the [Ionic for JHipster Module](https://github.com/oktadeveloper/generator-jhipster-ionic):
 
-```
+```bash
 npm install -g generator-jhipster-ionic
 yo jhipster-ionic
 ```
+
+This module allows you to generate entities using:
+
+```bash
+yo jhipster-ionic:entity <name>
+```
+
+### Tips
+
+You will need to enable CORS in your backend's `src/main/resources/config/application.yml` file. Set the allowed-origins so it works with `ionic serve`:
+         
+```yaml
+cors:
+    allowed-origins: "http://localhost:8100"
+```
+         
+The emulator runs on port 8080, so you will need to change your backend to run on a different port (e.g., 9080) when running ionic cordova emulate. Port 8080 is specified in the following files:
+
+```
+{jhipster-project}/src/main/resources/config/application-dev.yml
+{ionic-project}/src/providers/api/api.ts 
+```             
 
 ## Pages
 
@@ -53,7 +75,7 @@ requests to an API endpoint that you will need to configure.
 ### Api
 
 The `Api` provider is a simple CRUD frontend to an API. Simply put the root of
-your API url in the Api class and call get/post/put/patch/delete 
+your API url in the Api class and call get/post/put/patch/delete.
 
 ## i18n
 
