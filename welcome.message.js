@@ -3,7 +3,7 @@ const chalk = require('chalk');
 const msg = `
 Welcome to the ${chalk.blue.bold('Ionic')} ${chalk.green.bold('J')}${chalk.red.bold('Hipster')} Starter!
 
-The JHipster Starter ships with login and signup that will work with a JHipster backend with JWT Authentication. 
+The JHipster Starter ships with login and signup that will work with a JHipster backend with JWT Authentication or OAuth 2.0. 
 
 ${chalk.yellow.bold('You will need to enable CORS in your JHipster backend for things to work!')}
 

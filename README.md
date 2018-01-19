@@ -12,7 +12,7 @@ You can create a project with it directly, or use [Ionic for JHipster](https://g
 
 This project provides a base template of functionality for an Ionic app. The Ionic for JHipster module provides entity generation and additional features that require logic to install (e.g. OAuth authentication).
 
-This project is in an beta state, see its [v1.0 milestone](https://github.com/oktadeveloper/ionic-jhipster-starter/milestone/2) for progress towards a release.
+This project is in a beta state, see its [v1.0 milestone](https://github.com/oktadeveloper/ionic-jhipster-starter/milestone/2) for progress towards a release.
 
 ## Table of Contents
 
@@ -51,7 +51,7 @@ cors:
     allowed-origins: "http://localhost:8100"
 ```
          
-The emulator runs on port 8080, so you will need to change your backend to run on a different port (e.g., 9080) when running ionic cordova emulate. Port 8080 is specified in the following files:
+The emulator runs on port 8080, so you will need to change your backend to run on a different port (e.g., 9080) when running `ionic cordova emulate`. Port 8080 is specified in the following files:
 
 ```
 {jhipster-project}/src/main/resources/config/application-dev.yml
