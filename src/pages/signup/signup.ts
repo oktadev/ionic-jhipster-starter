@@ -43,9 +43,7 @@ export class SignupPage {
     this.user.signup(this.account).subscribe((resp) => {
       this.navCtrl.push(MainPage);
     }, (err) => {
-      //console.log('error in signup', err);
-      // ^^ results in 'You provided 'undefined' where a stream was expected'
-      //this.navCtrl.push(MainPage);
+      console.log('error in signup', err);
 
       // Unable to sign up
       let toast = this.toastCtrl.create({
