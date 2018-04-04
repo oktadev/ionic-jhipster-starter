@@ -1,13 +1,13 @@
 {
   "name": "JHipster Starter",
-  "baseref": "3cf7b83afdb44f179e02fbeb02ca9241a9759a60",
+  "baseref": "90b65a864827604fcb07d6b12537e1326c59e1a3",
   "welcome": "Welcome to the \u001b[34m\u001b[1mIonic\u001b[22m\u001b[39m \u001b[32m\u001b[1mJ\u001b[22m\u001b[39m\u001b[31m\u001b[1mHipster\u001b[22m\u001b[39m Starter!\n\nThe JHipster Starter ships with login and signup that will work with a JHipster backend with JWT Authentication. \n\n\u001b[33m\u001b[1mYou will need to enable CORS in your JHipster backend for Ionic to work!\u001b[22m\u001b[39m\n\nFor more details, please see the project's README: \u001b[1mhttps://github.com/oktadeveloper/ionic-jhipster-starter/blob/master/README.md\u001b[22m",
   "packageJson": {
     "dependencies": {
-      "@ionic-native/camera": "4.3.3",
-      "@ngx-translate/core": "8.0.0",
-      "@ngx-translate/http-loader": "2.0.0",
-      "ngx-webstorage": "2.0.0"
+      "@ionic-native/camera": "4.6.0",
+      "@ngx-translate/core": "10.0.1",
+      "@ngx-translate/http-loader": "3.0.1",
+      "ngx-webstorage": "2.0.1"
     },
     "devDependencies": {
       "generator-jhipster": "^4.10.2",

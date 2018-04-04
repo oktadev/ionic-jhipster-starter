@@ -54,7 +54,7 @@ export class User {
    * the user entered on the form.
    */
   signup(accountInfo: any) {
-    return this.api.post('register', accountInfo).share();
+    return this.api.post('register', accountInfo, { responseType: 'text' as 'text' }).share();
   }
 
   /**
