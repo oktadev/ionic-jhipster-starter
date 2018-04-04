@@ -5,8 +5,8 @@
   "packageJson": {
     "dependencies": {
       "@ionic-native/camera": "4.6.0",
-      "@ngx-translate/core": "10.0.1",
-      "@ngx-translate/http-loader": "3.0.1",
+      "@ngx-translate/core": "8.0.0",
+      "@ngx-translate/http-loader": "^2.0.0",
       "ngx-webstorage": "2.0.1"
     },
     "devDependencies": {
