@@ -51,12 +51,13 @@ cors:
     allowed-origins: "http://localhost:8100"
 ```
          
-The emulator runs on port 8080, so you will need to change your backend to run on a different port (e.g., 9080) when running `ionic cordova emulate`. Port 8080 is specified in the following files:
+The emulator runs on port 8080, so you will need to change your backend to run on a different port (e.g., 8888) when running `ionic cordova emulate`. Port 8080 is specified in the following files:
 
 ```
 {jhipster-project}/src/main/resources/config/application-dev.yml
+{jhipster-project}/webpack/webpack.dev.js
 {ionic-project}/src/providers/api/api.ts 
-```             
+```
 
 ## Pages
 
