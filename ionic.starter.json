@@ -7,11 +7,20 @@
       "@ionic-native/camera": "4.6.0",
       "@ngx-translate/core": "8.0.0",
       "@ngx-translate/http-loader": "^2.0.0",
-      "ngx-webstorage": "2.0.1"
+      "ngx-webstorage": "2.0.1",
+      "ng-jhipster": "0.4.5"
     },
     "devDependencies": {
       "generator-jhipster": "^4.10.2",
       "@types/node": "^8.0.47"
+    },
+    "cordova": {
+      "plugins": {
+        "cordova-plugin-camera": {
+          "CAMERA_USAGE_DESCRIPTION": "Need camera access to take pictures",
+          "PHOTOLIBRARY_USAGE_DESCRIPTION": "Need photo library access to get pictures from there"
+        }
+      }
     }
   }
 }
