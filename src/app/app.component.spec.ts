@@ -2,7 +2,7 @@ import { async, TestBed } from '@angular/core/testing';
 import { Config, IonicModule, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { ConfigMock, PlatformMock, SplashScreenMock, StatusBarMock } from 'ionic-mocks-jest';
+import { ConfigMock, PlatformMock, SplashScreenMock, StatusBarMock, StorageMock } from 'ionic-mocks-jest';
 import { TranslateModule, TranslateLoader, TranslateService } from '@ngx-translate/core';
 import { MyApp } from './app.component';
 import { WelcomePage } from '../pages/welcome/welcome';
@@ -10,7 +10,8 @@ import { WelcomePage } from '../pages/welcome/welcome';
 // Translation trickery provided by @leemon20
 // https://github.com/ngx-translate/core/issues/636#issuecomment-381131231
 import * as en from '../assets/i18n/en.json';
-import { Settings } from '../providers/settings/settings';
+import { provideSettings } from './app.module';
+import { Settings } from '../providers/providers';
 
 const TRANSLATIONS = {
   EN: en
@@ -42,7 +43,8 @@ describe('MyApp Component', () => {
           {provide: SplashScreen, useFactory: () => SplashScreenMock.instance()},
           {provide: Platform, useFactory: () => PlatformMock.instance()},
           {provide: Config, useFactory: () => ConfigMock.instance()},
-          {provide: Settings, useFactory: () = {}}
+          {provide: Storage, useFactory: () => StorageMock.instance()},
+          {provide: Settings, useFactory: provideSettings, deps: [Storage]}
         ]
       });
     })
