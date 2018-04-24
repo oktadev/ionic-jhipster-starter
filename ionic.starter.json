@@ -82,7 +82,7 @@
     ".sourcemaps",
     "node_modules",
     "package-lock.json",
-    "www",
+    "www"
   ],
   "scripts": {
     "test": "npm test"
