@@ -3,6 +3,7 @@ import { IonicModule, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { PlatformMock, SplashScreenMock, StatusBarMock } from 'ionic-mocks-jest';
+import { TranslateService } from '@ngx-translate/core';
 import { MyApp } from './app.component';
 import { WelcomePage } from '../pages/welcome/welcome';
 
@@ -18,7 +19,8 @@ describe('MyApp Component', () => {
         providers: [
           {provide: StatusBar, useFactory: () => StatusBarMock.instance()},
           {provide: SplashScreen, useFactory: () => SplashScreenMock.instance()},
-          {provide: Platform, useFactory: () => PlatformMock.instance()}
+          {provide: Platform, useFactory: () => PlatformMock.instance()},
+          TranslateService
         ]
       });
     })
