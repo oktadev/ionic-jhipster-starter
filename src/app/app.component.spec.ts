@@ -3,9 +3,24 @@ import { IonicModule, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { PlatformMock, SplashScreenMock, StatusBarMock } from 'ionic-mocks-jest';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslateModule, TranslateLoader, TranslateService } from '@ngx-translate/core';
 import { MyApp } from './app.component';
 import { WelcomePage } from '../pages/welcome/welcome';
+
+// Translation trickery provided by @leemon20
+// https://github.com/ngx-translate/core/issues/636#issuecomment-381131231
+import * as en from '@assets/i18n/en.json';
+
+const TRANSLATIONS = {
+  EN: en
+};
+
+class JsonTranslationLoader implements TranslateLoader {
+  getTranslation(code: string = ''): Observable<object> {
+    const uppercased = code.toUpperCase();
+    return of(TRANSLATIONS[uppercased]);
+  }
+}
 
 describe('MyApp Component', () => {
   let fixture;
@@ -20,7 +35,9 @@ describe('MyApp Component', () => {
           {provide: StatusBar, useFactory: () => StatusBarMock.instance()},
           {provide: SplashScreen, useFactory: () => SplashScreenMock.instance()},
           {provide: Platform, useFactory: () => PlatformMock.instance()},
-          TranslateService
+          TranslateModule.forRoot({
+            loader: { provide: TranslateLoader, useClass: JsonTranslationLoader }
+          })
         ]
       });
     })
