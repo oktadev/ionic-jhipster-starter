@@ -10,8 +10,7 @@ import { WelcomePage } from '../pages/welcome/welcome';
 // Translation trickery provided by @leemon20
 // https://github.com/ngx-translate/core/issues/636#issuecomment-381131231
 import * as en from '../assets/i18n/en.json';
-import { provideSettings } from './app.module';
-import { Settings } from '../providers/providers';
+import { Settings } from '../providers/settings/settings';
 
 const TRANSLATIONS = {
   EN: en
@@ -43,7 +42,7 @@ describe('MyApp Component', () => {
           {provide: SplashScreen, useFactory: () => SplashScreenMock.instance()},
           {provide: Platform, useFactory: () => PlatformMock.instance()},
           {provide: Config, useFactory: () => ConfigMock.instance()},
-          {provide: Settings, useFactory: provideSettings, deps: [localStorage]}
+          {provide: Settings, useFactory: () = {}}
         ]
       });
     })
