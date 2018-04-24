@@ -23,7 +23,7 @@ before_install:
 install:
   - cd `dirname $0` && r=`pwd` && echo $r
   - git clone https://github.com/ionic-team/starters.git
-  - cd $r/starters/ionic-angular/community/oktadeveloper/jhipster && npm pull origin master
+  - cd $r/starters/ionic-angular/community/oktadeveloper/jhipster && git pull origin $TRAVIS_BRANCH
   - cd $r/starters && npm run starters:build -- ionic-angular/community/oktadeveloper/jhipster
   - cd $r/starters/build/ionic-angular-community-oktadeveloper-jhipster
 script:
