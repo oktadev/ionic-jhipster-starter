@@ -4,11 +4,6 @@ import { browser, protractor } from 'protractor';
 describe('App', () => {
   let page: Page;
 
-  beforeAll(() => {
-    browser.get('/');
-    browser.waitForAngular();
-  });
-
   beforeEach(() => {
     page = new Page();
   });

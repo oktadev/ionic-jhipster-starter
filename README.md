@@ -127,7 +127,7 @@ Daniel created Ionic Mocks with Jest Support by forking the [ionic-mocks](https:
 
 If you want to add ionic-native mocks you should definitely check out Chris Griffith's [ionic-native-mocks](https://github.com/chrisgriffith/ionic-native-mocks) repository
 
-See the unit test example in the `src/app/app.component.spec.ts` folder.
+See the unit test example at [`src/app/app.component.spec.ts`](src/app/app.component.spec.ts).
 
 ### E2E Tests
 
@@ -141,7 +141,7 @@ The E2E test configuration is from the official [ionic-unit-testing-example](htt
 
 Add your pages into the `/pages` folder and your tests into the `/spec` folder.
 
-See the example end-to-end test in `e2e/spec/app.e2e-spec.ts`.
+See the example end-to-end test in [`e2e/spec/app.e2e-spec.ts`](e2e/spec/app.e2e-spec.ts).
 
 To run the e2e tests, build your app for production, then run the tests.
 
@@ -150,4 +150,4 @@ npm run build --prod
 npm run e2e
 ```
 
-The `test/protractor.conf.js` uses [serve](https://www.npmjs.com/package/serve) to serve up the contents of `www` on port 8100.
+The [Protractor configuration](test/protractor.conf.js) uses [serve](https://www.npmjs.com/package/serve) to serve up the contents of `www` on port 8100 before running its tests.
