@@ -31,6 +31,7 @@
       "jasmine-spec-reporter": "4.1.0",
       "jest": "22.4.3",
       "jest-preset-angular": "5.2.1",
+      "jest-localstorage-mock": "2.2.0",
       "null-loader": "0.1.1",
       "protractor": "5.1.1",
       "ts-loader": "4.2.0",
@@ -46,6 +47,7 @@
     },
     "jest": {
       "preset": "jest-preset-angular",
+      "setupFiles": ["jest-localstorage-mock"],
       "setupTestFrameworkScriptFile": "<rootDir>/test/jest.conf.ts",
       "transformIgnorePatterns": [
         "node_modules/(?!@ngrx|@ionic-native|@ionic)"
