@@ -9,7 +9,7 @@ import { WelcomePage } from '../pages/welcome/welcome';
 
 // Translation trickery provided by @leemon20
 // https://github.com/ngx-translate/core/issues/636#issuecomment-381131231
-import * as en from '@assets/i18n/en.json';
+import * as en from '../assets/i18n/en.json';
 
 const TRANSLATIONS = {
   EN: en
