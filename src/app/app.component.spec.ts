@@ -30,14 +30,16 @@ describe('MyApp Component', () => {
     async(() => {
       TestBed.configureTestingModule({
         declarations: [MyApp],
-        imports: [IonicModule.forRoot(MyApp)],
-        providers: [
-          {provide: StatusBar, useFactory: () => StatusBarMock.instance()},
-          {provide: SplashScreen, useFactory: () => SplashScreenMock.instance()},
-          {provide: Platform, useFactory: () => PlatformMock.instance()},
+        imports: [
+          IonicModule.forRoot(MyApp),
           TranslateModule.forRoot({
             loader: { provide: TranslateLoader, useClass: JsonTranslationLoader }
           })
+        ],
+        providers: [
+          {provide: StatusBar, useFactory: () => StatusBarMock.instance()},
+          {provide: SplashScreen, useFactory: () => SplashScreenMock.instance()},
+          {provide: Platform, useFactory: () => PlatformMock.instance()}
         ]
       });
     })
