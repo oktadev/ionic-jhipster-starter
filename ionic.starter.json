@@ -3,6 +3,15 @@
   "baseref": "761733c688f6542eb84ef78001ec96fbadc4845es",
   "welcome": "Welcome to the \u001b[34m\u001b[1mIonic\u001b[22m\u001b[39m \u001b[32m\u001b[1mJ\u001b[22m\u001b[39m\u001b[31m\u001b[1mHipster\u001b[22m\u001b[39m Starter!\n\nThe Ionic JHipster Starter ships with login and signup that will work with a JHipster backend (with JWT Authentication). \n\nFor more details, please see the project's README: \u001b[1mhttps://github.com/oktadeveloper/ionic-jhipster-starter/blob/master/README.md\u001b[22m",
   "packageJson": {
+    "scripts": {
+      "test": "jest",
+      "test:watch": "jest --watch",
+      "test:ci": "jest --runInBand",
+      "test:coverage": "jest --coverage",
+      "e2e": "npm run e2e-update && npm run e2e-test",
+      "e2e-test": "protractor ./test/protractor.conf.js",
+      "e2e-update": "webdriver-manager update --standalone false --gecko false"
+    },
     "dependencies": {
       "@ionic-native/camera": "4.6.0",
       "@ngx-translate/core": "8.0.0",
@@ -12,7 +21,20 @@
     },
     "devDependencies": {
       "generator-jhipster": "^4.10.2",
-      "@types/node": "^8.0.47"
+      "@types/node": "9.6.5",
+      "@types/jest": "22.2.3",
+      "typescript": "2.8.1",
+      "html-loader": "0.5.1",
+      "ionic-mocks-jest": "1.0.3",
+      "istanbul-instrumenter-loader": "3.0.0",
+      "jasmine": "3.1.0",
+      "jasmine-spec-reporter": "4.1.0",
+      "jest": "22.4.3",
+      "jest-preset-angular": "5.2.1",
+      "null-loader": "0.1.1",
+      "protractor": "5.1.1",
+      "ts-loader": "4.2.0",
+      "ts-node": "6.0.0"
     },
     "cordova": {
       "plugins": {
@@ -21,6 +43,35 @@
           "PHOTOLIBRARY_USAGE_DESCRIPTION": "Need photo library access to get pictures from there"
         }
       }
+    },
+    "jest": {
+      "preset": "jest-preset-angular",
+      "setupTestFrameworkScriptFile": "<rootDir>/test/jest.conf.ts",
+      "transformIgnorePatterns": [
+        "node_modules/(?!@ngrx|@ionic-native|@ionic)"
+      ],
+      "coveragePathIgnorePatterns": [
+        "<rootDir>/e2e/"
+      ],
+      "collectCoverageFrom": [
+        "**/*.{ts}",
+        "!**/*d.{ts}",
+        "!**/*interface.{ts}",
+        "!**/*module.{ts}",
+        "!**/*main.{ts}",
+        "!**/node_modules/**"
+      ],
+      "moduleFileExtensions": [
+        "ts",
+        "js",
+        "json"
+      ],
+      "coverageReporters": [
+        "json",
+        "lcov",
+        "text"
+      ],
+      "coverageDirectory": "./public/coverage"
     }
   }
 }
