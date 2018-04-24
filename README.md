@@ -131,7 +131,7 @@ See the unit test example in the `src/app/app.component.spec.ts` folder.
 
 ### E2E Tests
 
-IThe E2E test configuration is from the official [ionic-unit-testing-example](https://github.com/ionic-team/ionic-unit-testing-example) repository. The e2e folder structure has been changed a bit.
+The E2E test configuration is from the official [ionic-unit-testing-example](https://github.com/ionic-team/ionic-unit-testing-example) repository. The e2e folder structure has been changed a bit.
 
 ```
 /e2e
@@ -143,9 +143,11 @@ Add your pages into the `/pages` folder and your tests into the `/spec` folder.
 
 See the example end-to-end test in `e2e/spec/app.e2e-spec.ts`.
 
-To run the e2e tests, execute the following commands in two separate terminals.
+To run the e2e tests, build your app for production, then run the tests.
 
 ```bash
-ionic serve
+npm run build --prod
 npm run e2e
 ```
+
+The `test/protractor.conf.js` uses [serve](https://www.npmjs.com/package/serve) to serve up the contents of `www` on port 8100.

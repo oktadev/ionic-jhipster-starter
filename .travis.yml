@@ -30,7 +30,7 @@ install:
   - cd $TRAVIS_BUILD_DIR/starters/build/ionic-angular-community-oktadeveloper-jhipster && npm i
 script:
   - npm test
-  - ionic serve &
+  - npm run build --prod
   - npm run e2e
 notifications:
   webhooks:
