@@ -7,14 +7,14 @@
     <a href="http://www.jhipster.tech"><img src="src/assets/img/jhipster-logo.png" alt="JHipster" width="68"></a>
 </div>
 
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-
 The Ionic JHipster Starter is designed to be used with a JHipster backend that uses JWT Authentication.
 You can create a project with it directly, or use [Ionic for JHipster](https://github.com/oktadeveloper/generator-jhipster-ionic).
 
 This project provides a base template of functionality for an Ionic app. The Ionic for JHipster module provides entity generation and additional features that require logic to install (e.g. OAuth authentication).
 
 This project is in a beta state, see its [v1.0 milestone](https://github.com/oktadeveloper/ionic-jhipster-starter/milestone/2) for progress towards a release.
+
+[![Build Status][travis-image]][travis-url]
 
 ## Table of Contents
 
@@ -156,9 +156,5 @@ The [Protractor configuration](test/protractor.conf.js) uses [serve](https://www
 
 Apache-2.0 © [Okta](https://developer.okta.com/)
 
-[npm-image]: https://badge.fury.io/js/ionic-jhipster-starter.svg
-[npm-url]: https://npmjs.org/package/ionic-jhipster-starter
-[travis-image]: https://travis-ci.org/hipster-labs/ionic-jhipster-starter.svg?branch=master
-[travis-url]: https://travis-ci.org/hipster-labs/ionic-jhipster-starter
-[daviddm-image]: https://david-dm.org/hipster-labs/ionic-jhipster-starter.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/hipster-labs/ionic-jhipster-starter
+[travis-image]: https://travis-ci.org/oktadeveloper/ionic-jhipster-starter.svg?branch=master
+[travis-url]: https://travis-ci.org/oktadeveloper/ionic-jhipster-starter
