@@ -10,17 +10,17 @@ describe('App', () => {
 
   describe('default screen', () => {
     beforeEach(() => {
-      page.navigateTo('/#/home');
+      page.navigateTo('/');
     });
 
     it('should redirect to welcome', () => {
       const EC = protractor.ExpectedConditions;
-      browser.wait(EC.urlContains('/#/login'), 5000);
+      browser.wait(EC.urlContains('/#/welcome'), 5000);
     });
 
     it('should have the correct title', () => {
       page.getTitle().then(title => {
-        expect(title).toEqual('Welcome, Java Hipster!');
+        expect(title).toEqual('Ionic App');
       });
     });
   });

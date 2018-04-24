@@ -1,10 +1,28 @@
 import { async, TestBed } from '@angular/core/testing';
-import { IonicModule, Platform } from 'ionic-angular';
+import { Config, IonicModule, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { PlatformMock, SplashScreenMock, StatusBarMock } from 'ionic-mocks-jest';
+import { ConfigMock, PlatformMock, SplashScreenMock, StatusBarMock } from 'ionic-mocks-jest';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { MyApp } from './app.component';
-import { WelcomePage } from '../pages/welcome/welcome';
+import { IonicStorageModule, Storage } from '@ionic/storage';
+
+import * as en from '../assets/i18n/en.json';
+import { provideSettings } from './app.module';
+import { Settings } from '../providers/providers';
+import { Observable } from 'rxjs/Observable';
+import { of } from 'rxjs/observable/of';
+
+const TRANSLATIONS = {
+  EN: en
+};
+
+class JsonTranslationLoader implements TranslateLoader {
+  getTranslation(code: string = ''): Observable<object> {
+    const uppercased = code.toUpperCase();
+    return of(TRANSLATIONS[uppercased]);
+  }
+}
 
 describe('MyApp Component', () => {
   let fixture;
@@ -14,11 +32,21 @@ describe('MyApp Component', () => {
     async(() => {
       TestBed.configureTestingModule({
         declarations: [MyApp],
-        imports: [IonicModule.forRoot(MyApp)],
+        imports: [
+          IonicModule.forRoot(MyApp),
+          TranslateModule.forRoot({
+            loader: { provide: TranslateLoader, useClass: JsonTranslationLoader }
+          }),
+          IonicStorageModule.forRoot({
+            name: 'storage',
+            driverOrder: ['localstorage'],
+          })],
         providers: [
           {provide: StatusBar, useFactory: () => StatusBarMock.instance()},
           {provide: SplashScreen, useFactory: () => SplashScreenMock.instance()},
-          {provide: Platform, useFactory: () => PlatformMock.instance()}
+          {provide: Platform, useFactory: () => PlatformMock.instance()},
+          {provide: Config, useFactory: () => ConfigMock.instance()},
+          {provide: Settings, useFactory: provideSettings, deps: [Storage]}
         ]
       });
     })
@@ -33,7 +61,7 @@ describe('MyApp Component', () => {
     expect(component instanceof MyApp).toBe(true);
   });
 
-  it('should show welcome page', () => {
-    expect(component.rootPage).toEqual('WelcomePage');
+  it('should show tabs page', () => {
+    expect(component.rootPage).toEqual('TabsPage');
   });
 });
