@@ -38,4 +38,29 @@ export class EntityPage {
     // we wouldn't want the back button to show in this scenario
     this.nav.push(page.component);
   }
+
+  ionViewWillLoad() {
+    let page = location.hash.substring(location.hash.lastIndexOf('/') + 1);
+    let urlParts = location.hash.split('/');
+    page = page.charAt(0).toUpperCase() + page.substring(1) + 'Page';
+    let destination;
+    this.entities.forEach(entity => {
+      if (entity.component === page) {
+        destination = entity.component;
+      }
+    });
+    if (destination) {
+      this.nav.push(destination);
+    } else if (urlParts.length === 5) {
+      // convert from URL to page name: foo-detail to FooDetailPage
+      const detailPage = this.urlToTitleCase(urlParts[3]) + 'Page';
+      this.nav.push(detailPage, {id: urlParts[4]})
+    }
+  }
+
+  private urlToTitleCase(str) {
+    return str.replace(/(-|^)([^-]?)/g, (_, prep, letter) => {
+      return (prep && '') + letter.toUpperCase();
+    });
+  }
 }
