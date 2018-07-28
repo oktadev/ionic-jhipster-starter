@@ -50,6 +50,7 @@
       "preset": "jest-preset-angular",
       "setupFiles": ["jest-localstorage-mock"],
       "setupTestFrameworkScriptFile": "<rootDir>/test/jest.conf.ts",
+      "testURL": "http://localhost/",
       "transformIgnorePatterns": [
         "node_modules/(?!@ngrx|@ionic-native|@ionic)"
       ],
