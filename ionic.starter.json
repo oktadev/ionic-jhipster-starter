@@ -1,6 +1,6 @@
 {
   "name": "JHipster Starter",
-  "baseref": "504dfeec2df39683cdb1500d34853582ca9b8df7",
+  "baseref": "fc4e95672c34e8462f4deffa543e4702a890b97f",
   "welcome": "Welcome to the \u001b[34m\u001b[1mIonic\u001b[22m\u001b[39m \u001b[32m\u001b[1mJ\u001b[22m\u001b[39m\u001b[31m\u001b[1mHipster\u001b[22m\u001b[39m Starter!\n\nThe Ionic JHipster Starter ships with login and signup that will work with a JHipster backend (with JWT Authentication). \n\nFor more details, please see the project's README: \u001b[1mhttps://github.com/oktadeveloper/ionic-jhipster-starter/blob/master/README.md\u001b[22m",
   "packageJson": {
     "scripts": {
