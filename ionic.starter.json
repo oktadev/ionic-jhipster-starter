@@ -22,7 +22,6 @@
     "devDependencies": {
       "generator-jhipster": "^4.10.2",
       "@types/node": "8.0.0",
-      "@types/jest": "22.2.3",
       "typescript": "2.8.1",
       "html-loader": "0.5.1",
       "ionic-mocks-jest": "1.0.3",
