@@ -9,7 +9,7 @@ import { LoginService } from '../login/login.service';
 })
 export class UserService {
 
-  _user: any;
+  private user: any;
 
   constructor(
     public apiService: ApiService,
@@ -22,7 +22,7 @@ export class UserService {
    */
   login(accountInfo: any) {
     this.loginService.login(accountInfo).then((res) => {
-      this._loggedIn(res);
+      this.loggedIn(res);
       return of(res);
     }).catch((err) => {
       console.error('ERROR', err);
@@ -47,14 +47,14 @@ export class UserService {
    */
   logout() {
     this.loginService.logout();
-    this._user = null;
+    this.user = null;
   }
 
   /**
    * Process a login/signup response to store user data
    */
-  _loggedIn(resp) {
-    this._user = resp.user;
+  private loggedIn(resp) {
+    this.user = resp.user;
   }
 
 }

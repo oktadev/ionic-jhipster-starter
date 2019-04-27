@@ -5,8 +5,8 @@ const routes: Routes = [
   { path: '', loadChildren: './pages/welcome/welcome.module#WelcomePageModule' },
   { path: 'tabs', loadChildren: './pages/tabs/tabs.module#TabsPageModule' },
   { path: 'login', loadChildren: './pages/login/login.module#LoginPageModule' },
-  { path: 'accessdenied', redirectTo: '', pathMatch: 'full' },
-  { path: 'signup', loadChildren: './pages/signup/signup.module#SignupPageModule' }
+  { path: 'signup', loadChildren: './pages/signup/signup.module#SignupPageModule' },
+  { path: 'accessdenied', redirectTo: '', pathMatch: 'full' }
 ];
 @NgModule({
   imports: [

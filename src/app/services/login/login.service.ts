@@ -23,9 +23,9 @@ export class LoginService {
                   this.accountService.identity(true).then(account => {
                       // After the login the language will be changed to
                       // the language selected by the user during his registration
-                      // if (account !== null) {
-                      //     this.translate.use(account.langKey);
-                      // }
+                      if (account !== null) {
+                          this.translate.use(account.langKey);
+                      }
                       resolve(data);
                   });
                   return cb();
