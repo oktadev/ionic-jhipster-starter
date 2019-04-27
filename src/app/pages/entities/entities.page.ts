@@ -7,12 +7,11 @@ import { NavController } from '@ionic/angular';
   styleUrls: ['entities.page.scss']
 })
 export class EntitiesPage {
-
   entities: Array<any> = [
     /* jhipster-needle-add-entity-page - JHipster will add entity pages here */
   ];
 
-  constructor(public navController: NavController) { }
+  constructor(public navController: NavController) {}
 
   openPage(page) {
     // Reset the content nav to have just this page
@@ -44,5 +43,4 @@ export class EntitiesPage {
   //     return (prep && '') + letter.toUpperCase();
   //   });
   // }
-
 }

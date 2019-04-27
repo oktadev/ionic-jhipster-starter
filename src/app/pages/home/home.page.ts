@@ -12,14 +12,10 @@ import { Account } from 'src/model/account.model';
 export class HomePage implements OnInit {
   account: Account;
 
-  constructor(
-    public navController: NavController,
-    private accountService: AccountService,
-    private loginService: LoginService
-  ) { }
+  constructor(public navController: NavController, private accountService: AccountService, private loginService: LoginService) {}
 
   ngOnInit() {
-    this.accountService.identity().then((account) => {
+    this.accountService.identity().then(account => {
       if (account === null) {
         this.goBackToHomePage();
       } else {
@@ -40,5 +36,4 @@ export class HomePage implements OnInit {
   private goBackToHomePage(): void {
     this.navController.navigateBack('');
   }
-
 }

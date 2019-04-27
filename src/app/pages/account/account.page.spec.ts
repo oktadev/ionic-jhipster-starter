@@ -10,7 +10,7 @@ describe('AccountPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [AccountPage],
-      schemas: [CUSTOM_ELEMENTS_SCHEMA],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA]
     }).compileComponents();
   }));
 

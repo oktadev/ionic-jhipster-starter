@@ -6,11 +6,9 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class ApiService {
-
   public static API_URL = environment.apiUrl;
 
-  constructor(public http: HttpClient) {
-  }
+  constructor(public http: HttpClient) {}
 
   get(endpoint: string, params?: any, reqOpts?: any) {
     if (!reqOpts) {
@@ -45,5 +43,4 @@ export class ApiService {
   patch(endpoint: string, body: any, reqOpts?: any) {
     return this.http.put(ApiService.API_URL + '/' + endpoint, body, reqOpts);
   }
-
 }

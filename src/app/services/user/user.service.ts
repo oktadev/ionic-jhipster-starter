@@ -8,26 +8,25 @@ import { LoginService } from '../login/login.service';
   providedIn: 'root'
 })
 export class UserService {
-
   private user: any;
 
-  constructor(
-    public apiService: ApiService,
-    public loginService: LoginService
-  ) { }
+  constructor(public apiService: ApiService, public loginService: LoginService) {}
 
   /**
    * Send a POST request to our login endpoint with the data
    * the user entered on the form.
    */
   login(accountInfo: any) {
-    this.loginService.login(accountInfo).then((res) => {
-      this.loggedIn(res);
-      return of(res);
-    }).catch((err) => {
-      console.error('ERROR', err);
-      return throwError(err);
-    });
+    this.loginService
+      .login(accountInfo)
+      .then(res => {
+        this.loggedIn(res);
+        return of(res);
+      })
+      .catch(err => {
+        console.error('ERROR', err);
+        return throwError(err);
+      });
   }
 
   findAll(): Observable<any> {
@@ -56,5 +55,4 @@ export class UserService {
   private loggedIn(resp) {
     this.user = resp.user;
   }
-
 }

@@ -32,8 +32,6 @@
 
   "TUTORIAL_SLIDE4_TITLE": "Ste pripravený?",
 
-
-
   "WELCOME_INTRO": "Prvý krok vašej novej Ionic aplikácie.",
 
   "SETTINGS_TITLE": "Nastavenia",
@@ -44,16 +42,10 @@
 
   "SETTINGS_PROFILE_BUTTON": "Upraviť profil",
 
-
   "SETTINGS_PAGE_PROFILE": "Profil",
-
 
   "WELCOME_TITLE": "Vitajte",
   "LOGOUT_TITLE": "Logout",
-
-
-
-
 
   "LOGIN_TITLE": "Prihlásenie",
   "LOGIN_ERROR": "Nedá sa prihlásiť. Skotrolujte zadané informácie a skuste to znova.",
@@ -69,10 +61,6 @@
 
   "ITEM_CREATE_TITLE": "Nová položka",
   "ITEM_CREATE_CHOOSE_IMAGE": "Pridať obrázok",
-
-
-
-
 
   "ITEM_NAME_PLACEHOLDER": "Názov",
   "ITEM_ABOUT_PLACEHOLDER": "O položke",

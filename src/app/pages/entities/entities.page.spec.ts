@@ -10,7 +10,7 @@ describe('EntitiesPage', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [EntitiesPage],
-      schemas: [CUSTOM_ELEMENTS_SCHEMA],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA]
     }).compileComponents();
   }));
 
