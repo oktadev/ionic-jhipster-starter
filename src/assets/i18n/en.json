@@ -10,6 +10,7 @@
   "REMEMBER_ME": "Remember Me",
   "LOGIN": "Sign in",
   "SIGNUP": "Sign up",
+  "NO_ACCOUNT_MESSAGE": "Don't have an account yet?",
 
   "TAB1_TITLE": "Home",
   "TAB2_TITLE": "Entities",
@@ -44,6 +45,7 @@
   "SETTINGS_PAGE_PROFILE": "Edit Profile",
 
   "WELCOME_TITLE": "Welcome",
+  "LOGOUT_TITLE": "Logout",
 
   "LOGIN_TITLE": "Sign in",
   "LOGIN_ERROR": "Unable to sign in. Please check your account information and try again.",

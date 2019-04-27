@@ -1,9 +1,14 @@
 {
   "NAME": "ชื่อ",
+  "FIRST_NAME": "First Name",
+  "LAST_NAME": "Last Name",
   "PASSWORD": "รหัสผ่าน",
+  "REMEMBER_ME": "Remember Me",
   "EMAIL": "อีเมล์",
+  "USERNAME": "Username",
   "LOGIN": "เข้าระบบ",
   "SIGNUP": "สมัครใช้งาน",
+  "NO_ACCOUNT_MESSAGE": "Don't have an account yet?",
 
   "TAB1_TITLE": "รายการ",
   "TAB2_TITLE": "ค้นหา",
@@ -29,12 +34,16 @@
   "SETTINGS_PAGE_PROFILE": "แก้ไขข้อมูลส่วนตัว",
 
   "WELCOME_TITLE": "ยินดีต้อนรับ",
+  "LOGOUT_TITLE": "Logout",
 
   "LOGIN_TITLE": "การเข้าระบบ",
   "LOGIN_ERROR": "เข้าระบบไม่ได้. ตรวจสอบข้อมูลที่กรอกแล้วกรุณาลองใหม่",
   "LOGIN_BUTTON": "เข้าระบบ",
   "SIGNUP_TITLE": "สมัครใช้งาน",
   "SIGNUP_ERROR": "ไม่สามารถสร้างผู้ใช้ใหม่ กรุณาตรวจสอบข้อมูลที่กรอกแล้วลองใหม่",
+  "SIGNUP_SUCCESS": "Registration saved! Please check your email for confirmation.",
+  "EXISTING_USER_ERROR": "Email is already in use! Please choose another one.",
+  "INVALID_PASSWORD_ERROR": "Invalid password, please try again.",
   "SIGNUP_BUTTON": "สมัคร",
   "LIST_MASTER_TITLE": "รายการ",
 

@@ -1,9 +1,14 @@
 {
   "NAME": "Імя",
+  "FIRST_NAME": "First Name",
+  "LAST_NAME": "Last Name",
   "EMAIL": "Email",
+  "USERNAME": "Username",
   "PASSWORD": "Пароль",
+  "REMEMBER_ME": "Remember Me",
   "LOGIN": "Увайсці",
   "SIGNUP": "Зарэгістравацца",
+  "NO_ACCOUNT_MESSAGE": "Don't have an account yet?",
 
   "TAB1_TITLE": "Спіс",
   "TAB2_TITLE": "Пошук",
@@ -29,12 +34,16 @@
   "SETTINGS_PAGE_PROFILE": "Профіль",
 
   "WELCOME_TITLE": "Прывітанне",
+  "LOGOUT_TITLE": "Logout",
 
   "LOGIN_TITLE": "Уваход",
   "LOGIN_ERROR": "Не атрымалася ўвайсці ў сістэму. Калі ласка, праверце ўведзеныя ўліковыя дадзеныя і паспрабуйце зноў.",
   "LOGIN_BUTTON": "Увайсці",
   "SIGNUP_TITLE": "Рэгістрацыя",
   "SIGNUP_ERROR": "Не атрымалася стварыць уліковы запіс. Калі ласка, праверце ўведзеныя ўліковыя дадзеныя і паспрабуйце зноў.",
+  "SIGNUP_SUCCESS": "Registration saved! Please check your email for confirmation.",
+  "EXISTING_USER_ERROR": "Email is already in use! Please choose another one.",
+  "INVALID_PASSWORD_ERROR": "Invalid password, please try again.",
   "SIGNUP_BUTTON": "Зарэгістравацца",
 
   "LIST_MASTER_TITLE": "Спіс",

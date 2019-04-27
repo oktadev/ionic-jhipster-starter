@@ -1,9 +1,14 @@
 {
   "NAME": "Nome",
+  "FIRST_NAME": "First Name",
+  "LAST_NAME": "Last Name",
   "PASSWORD": "Password",
+  "REMEMBER_ME": "Remember Me",
   "EMAIL": "Email",
+  "USERNAME": "Username",
   "LOGIN": "Entrar",
   "SIGNUP": "Criar conta",
+  "NO_ACCOUNT_MESSAGE": "Don't have an account yet?",
 
   "TAB1_TITLE": "Items",
   "TAB2_TITLE": "Pesquisa",
@@ -29,12 +34,16 @@
   "SETTINGS_PAGE_PROFILE": "Editar Perfil",
 
   "WELCOME_TITLE": "Bem-vindo",
+  "LOGOUT_TITLE": "Logout",
 
   "LOGIN_TITLE": "Entrar",
   "LOGIN_ERROR": "Não foi possível entrar na sua conta. Por favor confirme os seus dados e tente novamente.",
   "LOGIN_BUTTON": "Entrar",
   "SIGNUP_TITLE": "Criar conta",
   "SIGNUP_ERROR": "Não foi possível criar a sua conta. Por favor confirme os seus dados e tente novamente.",
+  "SIGNUP_SUCCESS": "Registration saved! Please check your email for confirmation.",
+  "EXISTING_USER_ERROR": "Email is already in use! Please choose another one.",
+  "INVALID_PASSWORD_ERROR": "Invalid password, please try again.",
   "SIGNUP_BUTTON": "Criar conta",
 
   "LIST_MASTER_TITLE": "Items",

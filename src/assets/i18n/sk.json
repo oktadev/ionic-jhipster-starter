@@ -2,11 +2,15 @@
   "BACK_BUTTON_TEXT": "Späť",
 
   "NAME": "Meno",
+  "FIRST_NAME": "First Name",
+  "LAST_NAME": "Last Name",
   "EMAIL": "Email",
   "USERNAME": "Prihlasovacie meno",
   "PASSWORD": "Heslo",
+  "REMEMBER_ME": "Remember Me",
   "LOGIN": "Prihlásiť",
   "SIGNUP": "Registrovať",
+  "NO_ACCOUNT_MESSAGE": "Don't have an account yet?",
 
   "TAB1_TITLE": "Položky",
   "TAB2_TITLE": "Hľadať",
@@ -45,6 +49,7 @@
 
 
   "WELCOME_TITLE": "Vitajte",
+  "LOGOUT_TITLE": "Logout",
 
 
 
@@ -55,6 +60,9 @@
   "LOGIN_BUTTON": "Prihlásiť",
   "SIGNUP_TITLE": "Registrácia",
   "SIGNUP_ERROR": "Nedá sa vytvoriť konto. Skotrolujte zadané informácie a skuste to znova.",
+  "SIGNUP_SUCCESS": "Registration saved! Please check your email for confirmation.",
+  "EXISTING_USER_ERROR": "Email is already in use! Please choose another one.",
+  "INVALID_PASSWORD_ERROR": "Invalid password, please try again.",
   "SIGNUP_BUTTON": "Registrovať",
 
   "LIST_MASTER_TITLE": "Položky",

@@ -1,9 +1,14 @@
 {
   "NAME": "Ime",
+  "FIRST_NAME": "First Name",
+  "LAST_NAME": "Last Name",
   "PASSWORD": "Šifra",
+  "REMEMBER_ME": "Remember Me",
   "EMAIL": "E-mail",
+  "USERNAME": "Username",
   "LOGIN": "Prijava",
   "SIGNUP": "Registracija",
+  "NO_ACCOUNT_MESSAGE": "Don't have an account yet?",
 
   "TAB1_TITLE": "Stavke",
   "TAB2_TITLE": "Traži",
@@ -29,12 +34,16 @@
   "SETTINGS_PAGE_PROFILE": "Uredi profil",
 
   "WELCOME_TITLE": "Dobrodošli",
+  "LOGOUT_TITLE": "Logout",
 
   "LOGIN_TITLE": "Prijavi se",
   "LOGIN_ERROR": "Prijava nije uspjela. Molimo provjerite vaše podatke za prijavu, a zatim pokušajte ponovo.",
   "LOGIN_BUTTON": "Prijava",
   "SIGNUP_TITLE": "Registruj se",
   "SIGNUP_ERROR": "Nije moguće kreirati novi korisnički račun. Molimo vas provjerite podatke, a zatim pokušajte ponovo.",
+  "SIGNUP_SUCCESS": "Registration saved! Please check your email for confirmation.",
+  "EXISTING_USER_ERROR": "Email is already in use! Please choose another one.",
+  "INVALID_PASSWORD_ERROR": "Invalid password, please try again.",
   "SIGNUP_BUTTON": "Registracija",
 
   "LIST_MASTER_TITLE": "Stavke",

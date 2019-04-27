@@ -1,9 +1,14 @@
 {
   "NAME": "Navn",
+  "FIRST_NAME": "First Name",
+  "LAST_NAME": "Last Name",
   "PASSWORD": "Adgangskode",
+  "REMEMBER_ME": "Remember Me",
   "EMAIL": "Email",
+  "USERNAME": "Username",
   "LOGIN": "Log Ind",
   "SIGNUP": "Tilmeld",
+  "NO_ACCOUNT_MESSAGE": "Don't have an account yet?",
 
   "TAB1_TITLE": "Poster",
   "TAB2_TITLE": "Søg",
@@ -29,12 +34,16 @@
   "SETTINGS_PAGE_PROFILE": "Rediger Profil",
 
   "WELCOME_TITLE": "Velkommen",
+  "LOGOUT_TITLE": "Logout",
 
   "LOGIN_TITLE": "Log ind",
   "LOGIN_ERROR": "Fejl ved log ind. Kontroller venligst kontooplysningerne og prøv igen.",
   "LOGIN_BUTTON": "Log ind",
   "SIGNUP_TITLE": "Registrer",
   "SIGNUP_ERROR": "Fejl ved oprettelse. Kontroller venligst kontooplysningerne og prøv igen.",
+  "SIGNUP_SUCCESS": "Registration saved! Please check your email for confirmation.",
+  "EXISTING_USER_ERROR": "Email is already in use! Please choose another one.",
+  "INVALID_PASSWORD_ERROR": "Invalid password, please try again.",
   "SIGNUP_BUTTON": "Registrer",
 
   "LIST_MASTER_TITLE": "Poster",

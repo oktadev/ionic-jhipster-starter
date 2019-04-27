@@ -2,11 +2,15 @@
   "BACK_BUTTON_TEXT": "Dzoka Shure",
 
   "NAME": "Zita",
+  "FIRST_NAME": "First Name",
+  "LAST_NAME": "Last Name",
   "EMAIL": "Tsambambozha",
   "USERNAME": "Zitamushandisi",
   "PASSWORD": "Chihori",
+  "REMEMBER_ME": "Remember Me",
   "LOGIN": "Sign mu",
   "SIGNUP": "Gadzira homwe yejikichidzo",
+  "NO_ACCOUNT_MESSAGE": "Don't have an account yet?",
 
   "TAB1_TITLE": "Maaitemu",
   "TAB2_TITLE": "Tsvaga",
@@ -41,12 +45,16 @@
   "SETTINGS_PAGE_PROFILE": "Pepeta Profile",
 
   "WELCOME_TITLE": "Tinokuchingamidza",
+  "LOGOUT_TITLE": "Logout",
 
   "LOGIN_TITLE": "Sign mu",
   "LOGIN_ERROR": "Takundikana kuita sign in. Tinokumbirawo mutarire homwe yenyu yejikichidzo mugoedza zvakare",
   "LOGIN_BUTTON": "Sign mu",
   "SIGNUP_TITLE": "Gadzira homwe yejikichidzo",
   "SIGNUP_ERROR": "Takundikana kugadzira homwe yejikichidzo ,Tinokumbirawo mutarire zvakatarwa pahomwe yenyu yejikichidzo moedza zvakare.",
+  "SIGNUP_SUCCESS": "Registration saved! Please check your email for confirmation.",
+  "EXISTING_USER_ERROR": "Email is already in use! Please choose another one.",
+  "INVALID_PASSWORD_ERROR": "Invalid password, please try again.",
   "SIGNUP_BUTTON": "Gadzira homwe yejikichidzo",
 
   "LIST_MASTER_TITLE": "maaitemu",

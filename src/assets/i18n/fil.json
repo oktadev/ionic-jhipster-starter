@@ -1,9 +1,14 @@
 {
   "NAME": "Pangalan",
+  "FIRST_NAME": "First Name",
+  "LAST_NAME": "Last Name",
   "PASSWORD": "Password",
+  "REMEMBER_ME": "Remember Me",
   "EMAIL": "Email",
+  "USERNAME": "Username",
   "LOGIN": "Sign in",
   "SIGNUP": "Sign up",
+  "NO_ACCOUNT_MESSAGE": "Don't have an account yet?",
 
   "TAB1_TITLE": "Mga Gamit",
   "TAB2_TITLE": "Hanapin",
@@ -29,12 +34,16 @@
   "SETTINGS_PAGE_PROFILE": "Baguhin ang Profile",
 
   "WELCOME_TITLE": "Maligayang Pagdating",
+  "LOGOUT_TITLE": "Logout",
 
   "LOGIN_TITLE": "Sign in",
   "LOGIN_ERROR": "Hindi makapag-sign-in. Paki-kumpirma ang iyong impormasyon at subukan ulit",
   "LOGIN_BUTTON": "Sign in",
   "SIGNUP_TITLE": "Sign up",
   "SIGNUP_ERROR": "Hindi makagawa ng bagong account. Paki-kumpirma ang iyong impormasyon at subukan ulit",
+  "SIGNUP_SUCCESS": "Registration saved! Please check your email for confirmation.",
+  "EXISTING_USER_ERROR": "Email is already in use! Please choose another one.",
+  "INVALID_PASSWORD_ERROR": "Invalid password, please try again.",
   "SIGNUP_BUTTON": "Sign up",
 
   "LIST_MASTER_TITLE": "Mga Item",

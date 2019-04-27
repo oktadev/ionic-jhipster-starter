@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Welcome, Java Hipster!
+      {{ 'WELCOME_TITLE' | translate }}, Java Hipster!
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -11,7 +11,7 @@
   <div>
       <ion-button expand="block" routerLink="/login" id="signIn">{{ 'LOGIN' | translate }}</ion-button>
 
-      <p>Don't have an account yet?</p>
+      <p>{{ 'NO_ACCOUNT_MESSAGE' | translate }}</p>
       <ion-button expand="block" routerLink="/signup">{{ 'SIGNUP' | translate }}</ion-button>
 
   </div>

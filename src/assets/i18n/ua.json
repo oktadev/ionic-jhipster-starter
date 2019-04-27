@@ -1,9 +1,14 @@
 {
   "NAME": "Ім'я",
+  "FIRST_NAME": "First Name",
+  "LAST_NAME": "Last Name",
   "PASSWORD": "Пароль",
+  "REMEMBER_ME": "Remember Me",
   "EMAIL": "Email",
+  "USERNAME": "Username",
   "LOGIN": "Вхід",
   "SIGNUP": "Реєстрація",
+  "NO_ACCOUNT_MESSAGE": "Don't have an account yet?",
 
   "TAB1_TITLE": "Список",
   "TAB2_TITLE": "Пошук",
@@ -29,12 +34,16 @@
   "SETTINGS_PAGE_PROFILE": "Редагування профілю",
 
   "WELCOME_TITLE": "Ласкаво просимо",
+  "LOGOUT_TITLE": "Logout",
 
   "LOGIN_TITLE": "Вхід",
   "LOGIN_ERROR": "Неможливо увійти. Будь ласка перевірте інформацію Вашого облікового запису та спробуйте увійти ще раз.",
   "LOGIN_BUTTON": "Увійти",
   "SIGNUP_TITLE": "Реєстрація",
   "SIGNUP_ERROR": "Неможливо створити обліковий запис. Будь ласка перевірте інформацію Вашого облікового запису та спробуйте ще раз.",
+  "SIGNUP_SUCCESS": "Registration saved! Please check your email for confirmation.",
+  "EXISTING_USER_ERROR": "Email is already in use! Please choose another one.",
+  "INVALID_PASSWORD_ERROR": "Invalid password, please try again.",
   "SIGNUP_BUTTON": "Зареєструвати",
 
   "LIST_MASTER_TITLE": "Список",

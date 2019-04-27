@@ -1,9 +1,14 @@
 {
   "NAME": "Naam",
+  "FIRST_NAME": "First Name",
+  "LAST_NAME": "Last Name",
   "PASSWORD": "Wachtwoord",
+  "REMEMBER_ME": "Remember Me",
   "EMAIL": "E-mail",
+  "USERNAME": "Username",
   "LOGIN": "Inloggen",
   "SIGNUP": "Aanmelden",
+  "NO_ACCOUNT_MESSAGE": "Don't have an account yet?",
 
   "TAB1_TITLE": "Items",
   "TAB2_TITLE": "Zoeken",
@@ -29,12 +34,16 @@
   "SETTINGS_PAGE_PROFILE": "Wijzig Profiel",
 
   "WELCOME_TITLE": "Welkom",
+  "LOGOUT_TITLE": "Logout",
 
   "LOGIN_TITLE": "Aanmelden",
   "LOGIN_ERROR": "Inloggen mislukt. Controleer a.u.b. uw account informatie en probeer het nogmaals.",
   "LOGIN_BUTTON": "Inloggen",
   "SIGNUP_TITLE": "Aanmelden",
   "SIGNUP_ERROR": "Aanmelden mislukt. Controleer a.u.b. uw account informatie en probeer het nogmaals.",
+  "SIGNUP_SUCCESS": "Registration saved! Please check your email for confirmation.",
+  "EXISTING_USER_ERROR": "Email is already in use! Please choose another one.",
+  "INVALID_PASSWORD_ERROR": "Invalid password, please try again.",
   "SIGNUP_BUTTON": "Aanmelden",
 
   "LIST_MASTER_TITLE": "Items",

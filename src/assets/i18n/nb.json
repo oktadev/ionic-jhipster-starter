@@ -1,9 +1,14 @@
 {
   "NAME": "Navn",
+  "FIRST_NAME": "First Name",
+  "LAST_NAME": "Last Name",
   "PASSWORD": "Passord",
+  "REMEMBER_ME": "Remember Me",
   "EMAIL": "Email",
+  "USERNAME": "Username",
   "LOGIN": "Logg inn",
   "SIGNUP": "Registrer deg",
+  "NO_ACCOUNT_MESSAGE": "Don't have an account yet?",
 
   "TAB1_TITLE": "Innlegg",
   "TAB2_TITLE": "Søk",
@@ -29,12 +34,16 @@
   "SETTINGS_PAGE_PROFILE": "Endre Profil",
 
   "WELCOME_TITLE": "Velkommen",
+  "LOGOUT_TITLE": "Logout",
 
   "LOGIN_TITLE": "Innlogging",
   "LOGIN_ERROR": "Feil ved innlogging. Bekreft at kontodetaljene er riktig og prøv igjen.",
   "LOGIN_BUTTON": "Logg inn",
   "SIGNUP_TITLE": "Registrering",
   "SIGNUP_ERROR": "Feil ved registrering. Bekreft kontodetaljene og prøv igjen.",
+  "SIGNUP_SUCCESS": "Registration saved! Please check your email for confirmation.",
+  "EXISTING_USER_ERROR": "Email is already in use! Please choose another one.",
+  "INVALID_PASSWORD_ERROR": "Invalid password, please try again.",
   "SIGNUP_BUTTON": "Registrer deg",
 
   "LIST_MASTER_TITLE": "Innlegg",

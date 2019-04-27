@@ -40,8 +40,12 @@ export class SignupPage implements OnInit {
     public translateService: TranslateService
   ) {
 
-    this.translateService.get(['SIGNUP_ERROR', 'SIGNUP_SUCCESS',
-      'EXISTING_USER_ERROR', 'INVALID_PASSWORD_ERROR']).subscribe((values) => {
+    this.translateService.get([
+      'SIGNUP_ERROR',
+      'SIGNUP_SUCCESS',
+      'EXISTING_USER_ERROR',
+      'INVALID_PASSWORD_ERROR'
+    ]).subscribe((values) => {
       this.signupErrorString = values.SIGNUP_ERROR;
       this.signupSuccessString = values.SIGNUP_SUCCESS;
       this.existingUserError = values.EXISTING_USER_ERROR;

@@ -1,9 +1,14 @@
 {
   "NAME": "שם",
+  "FIRST_NAME": "First Name",
+  "LAST_NAME": "Last Name",
   "PASSWORD": "סיסמא",
+  "REMEMBER_ME": "Remember Me",
   "EMAIL": "דואר אלקטרוני",
+  "USERNAME": "Username",
   "LOGIN": "התחברות",
   "SIGNUP": "הרשמה",
+  "NO_ACCOUNT_MESSAGE": "Don't have an account yet?",
 
   "TAB1_TITLE": "פריטים",
   "TAB2_TITLE": "חיפוש",
@@ -29,12 +34,16 @@
   "SETTINGS_PAGE_PROFILE": "עריכת פרופיל",
 
   "WELCOME_TITLE": "ברוכים הבאים",
+  "LOGOUT_TITLE": "Logout",
 
   "LOGIN_TITLE": "התחברות",
   "LOGIN_ERROR": "לא ניתן להתחבר. אנא בדוק את פרטי ההתחברות ונסה שנית.",
   "LOGIN_BUTTON": "התחבר",
   "SIGNUP_TITLE": "הרשמה",
   "SIGNUP_ERROR": "לא ניתן ליצור חשבון. אנא בדוק את פרטי ההתחברות ונסה שנית.",
+  "SIGNUP_SUCCESS": "Registration saved! Please check your email for confirmation.",
+  "EXISTING_USER_ERROR": "Email is already in use! Please choose another one.",
+  "INVALID_PASSWORD_ERROR": "Invalid password, please try again.",
   "SIGNUP_BUTTON": "הירשם",
 
   "LIST_MASTER_TITLE": "פריטים",

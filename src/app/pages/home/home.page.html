@@ -1,11 +1,11 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Welcome, {{account?.firstName}}
+      {{ 'WELCOME_TITLE' | translate }}, {{account?.firstName}}
     </ion-title>
     <ion-buttons slot="end">
       <ion-button (click)="logout()">
-        Logout
+        {{ 'LOGOUT_TITLE' | translate }}
         <ion-icon slot="end" name="log-out"></ion-icon>
       </ion-button>
     </ion-buttons>

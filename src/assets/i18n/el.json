@@ -1,9 +1,14 @@
 {
   "NAME": "Όνομα",
+  "FIRST_NAME": "First Name",
+  "LAST_NAME": "Last Name",
   "PASSWORD": "Κωδικός",
+  "REMEMBER_ME": "Remember Me",
   "EMAIL": "Email",
+  "USERNAME": "Username",
   "LOGIN": "Σύνδεση",
   "SIGNUP": "Εγγραφή",
+  "NO_ACCOUNT_MESSAGE": "Don't have an account yet?",
 
   "TAB1_TITLE": "Αντικείμενα",
   "TAB2_TITLE": "Αναζήτηση",
@@ -29,12 +34,16 @@
   "SETTINGS_PAGE_PROFILE": "Επεξεργασία Προφίλ",
 
   "WELCOME_TITLE": "Καλώς ορίσατε",
+  "LOGOUT_TITLE": "Logout",
 
   "LOGIN_TITLE": "Σύνδεση",
   "LOGIN_ERROR": "Η σύνδεση ήταν ανέφικτη. Παρακαλούμε ελέγξτε τις πληροφορίες λογαριασμού σας και ξαναπροσπαθήστε.",
   "LOGIN_BUTTON": "Σύνδεση",
   "SIGNUP_TITLE": "Εγγραφή",
   "SIGNUP_ERROR": "Η δημιουργία λογαριασμού ήταν ανέφικτη. Παρακαλούμε ελέγξτε τις πληροφορίες λογαριασμού σας και ξαναπροσπαθήστε.",
+  "SIGNUP_SUCCESS": "Registration saved! Please check your email for confirmation.",
+  "EXISTING_USER_ERROR": "Email is already in use! Please choose another one.",
+  "INVALID_PASSWORD_ERROR": "Invalid password, please try again.",
   "SIGNUP_BUTTON": "Εγγραφή",
 
   "LIST_MASTER_TITLE": "Αντικείμενα",

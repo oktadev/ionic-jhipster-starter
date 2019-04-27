@@ -2,11 +2,15 @@
   "BACK_BUTTON_TEXT": "رجوع",
 
   "NAME": "الاسم",
+  "FIRST_NAME": "First Name",
+  "LAST_NAME": "Last Name",
   "EMAIL": "البريد الإلكتروني",
   "USERNAME": "اسم المستخدم",
   "PASSWORD": "كلمة السر",
+  "REMEMBER_ME": "Remember Me",
   "LOGIN": "تسجيل الدخول",
   "SIGNUP": "انشاء الحساب",
+  "NO_ACCOUNT_MESSAGE": "Don't have an account yet?",
 
   "TAB1_TITLE": "عناصر",
   "TAB2_TITLE": "بحث",
@@ -41,12 +45,16 @@
   "SETTINGS_PAGE_PROFILE": "تعديل الملف الشخصي",
 
   "WELCOME_TITLE": "مرحبا",
+  "LOGOUT_TITLE": "Logout",
 
   "LOGIN_TITLE": "تسجيل الدخول",
   "LOGIN_ERROR": "تعذر تسجيل الدخول. يرجى التحقق من معلومات حسابك وإعادة المحاولة.",
   "LOGIN_BUTTON": "تسجيل الدخول",
   "SIGNUP_TITLE": "انشاء الحساب",
   "SIGNUP_ERROR": "تعذر إنشاء الحساب. يرجى التحقق من معلومات حسابك وإعادة المحاولة.",
+  "SIGNUP_SUCCESS": "Registration saved! Please check your email for confirmation.",
+  "EXISTING_USER_ERROR": "Email is already in use! Please choose another one.",
+  "INVALID_PASSWORD_ERROR": "Invalid password, please try again.",
   "SIGNUP_BUTTON": "انشاء الحساب",
 
   "LIST_MASTER_TITLE": "عناصر",
