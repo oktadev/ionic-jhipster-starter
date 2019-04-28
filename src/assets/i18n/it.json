@@ -2,15 +2,19 @@
   "BACK_BUTTON_TEXT": "Indietro",
 
   "NAME": "Nome",
+  "FIRST_NAME": "First Name",
+  "LAST_NAME": "Last Name",
   "EMAIL": "Email",
   "USERNAME": "Nome utente",
   "PASSWORD": "Password",
+  "REMEMBER_ME": "Remember Me",
   "LOGIN": "Login",
   "SIGNUP": "Registrati",
+  "NO_ACCOUNT_MESSAGE": "Don't have an account yet?",
 
   "TAB1_TITLE": "Elenco",
   "TAB2_TITLE": "Ricerca",
-  "TAB3_TITLE": "Impostazioni",
+  "TAB3_TITLE": "Utente",
 
   "MAP_TITLE": "Mappa",
 
@@ -41,12 +45,16 @@
   "SETTINGS_PAGE_PROFILE": "Modifica Profilo",
 
   "WELCOME_TITLE": "Benvenuto",
+  "LOGOUT_TITLE": "Logout",
 
   "LOGIN_TITLE": "Login",
   "LOGIN_ERROR": "Non è possibile accedere. Ricontrollare le informazioni utente digitate prima di riprovare.",
   "LOGIN_BUTTON": "Accedi",
   "SIGNUP_TITLE": "Registrazione",
   "SIGNUP_ERROR": "Non è possibile creare l'utente. Assicurarsi di aver inserito le informazioni utente correttamente e poi riprovare.",
+  "SIGNUP_SUCCESS": "Registration saved! Please check your email for confirmation.",
+  "EXISTING_USER_ERROR": "Email is already in use! Please choose another one.",
+  "INVALID_PASSWORD_ERROR": "Invalid password, please try again.",
   "SIGNUP_BUTTON": "Registrati",
 
   "LIST_MASTER_TITLE": "Elenco elementi",
@@ -64,5 +72,6 @@
   "CARDS_TITLE": "Social",
 
   "SEARCH_TITLE": "Ricerca",
-  "SEARCH_PLACEHOLDER": "Trova elementi in lista, ex. \"Donald Duck\""
+  "SEARCH_PLACEHOLDER": "Trova elementi in lista, ex. \"Donald Duck\"",
+  "EMPTY_ENTITIES_MESSAGE": "You haven't generated entities yet. Run `yo jhipster-ionic:entity <name>`"
 }

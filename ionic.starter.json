@@ -1,7 +1,7 @@
 {
   "name": "JHipster Starter",
-  "baseref": "fc4e95672c34e8462f4deffa543e4702a890b97f",
-  "welcome": "Welcome to the \u001b[34m\u001b[1mIonic\u001b[22m\u001b[39m \u001b[32m\u001b[1mJ\u001b[22m\u001b[39m\u001b[31m\u001b[1mHipster\u001b[22m\u001b[39m Starter!\n\nThe Ionic JHipster Starter ships with login and signup that will work with a JHipster backend (with JWT Authentication). \n\nFor more details, please see the project's README: \u001b[1mhttps://github.com/oktadeveloper/ionic-jhipster-starter/blob/master/README.md\u001b[22m",
+  "baseref": "a1abd0df2aaa0ab46c8c6495e1f63e07c4f7c977",
+  "welcome": "Welcome to the \u001b[34m\u001b[1mIonic\u001b[22m\u001b[39m \u001b[32m\u001b[1mJ\u001b[22m\u001b[39m\u001b[31m\u001b[1mHipster\u001b[22m\u001b[39m Starter!\n\nThe Ionic JHipster Starter ships with login and signup that will work with a JHipster backend (with JWT Authentication). \n\nFor more details, please see the project's README: \u001b[1mhttps://github.com/fleboulch/ionic-jhipster-starter/blob/master/README.md\u001b[22m",
   "packageJson": {
     "scripts": {
       "test": "jest",
@@ -13,30 +13,30 @@
       "e2e-update": "webdriver-manager update --standalone false --gecko false"
     },
     "dependencies": {
-      "@ionic-native/camera": "4.6.0",
-      "@ngx-translate/core": "8.0.0",
-      "@ngx-translate/http-loader": "2.0.0",
+      "@ionic-native/camera": "5.3.0",
+      "@ngx-translate/core": "11.0.1",
+      "@ngx-translate/http-loader": "4.0.0",
       "ngx-webstorage": "2.0.1",
-      "ng-jhipster": "0.4.5"
+      "ng-jhipster": "0.9.3"
     },
     "devDependencies": {
-      "generator-jhipster": "^4.10.2",
-      "@types/node": "8.0.0",
-      "@types/jest": "22.2.3",
-      "typescript": "2.8.1",
-      "html-loader": "0.5.1",
-      "ionic-mocks-jest": "1.0.3",
-      "istanbul-instrumenter-loader": "3.0.0",
-      "jasmine": "3.1.0",
-      "jasmine-spec-reporter": "4.1.0",
-      "jest": "22.4.3",
-      "jest-localstorage-mock": "2.2.0",
-      "jest-preset-angular": "5.2.1",
+      "generator-jhipster": "^5.8.2",
+      "@types/node": "11.12.2",
+      "@types/jest": "24.0.11",
+      "typescript": "3.1.1",
+      "html-loader": "0.5.5",
+      "ionic-mocks-jest": "1.3.3",
+      "istanbul-instrumenter-loader": "3.0.1",
+      "jasmine": "3.3.1",
+      "jasmine-spec-reporter": "4.2.1",
+      "jest": "24.5.0",
+      "jest-localstorage-mock": "2.4.0",
+      "jest-preset-angular": "7.0.1",
       "null-loader": "0.1.1",
-      "protractor": "5.1.1",
+      "protractor": "5.4.2",
       "node-http-server": "8.1.2",
-      "ts-loader": "4.2.0",
-      "ts-node": "6.0.0"
+      "ts-loader": "5.3.3",
+      "ts-node": "8.0.3"
     },
     "cordova": {
       "plugins": {

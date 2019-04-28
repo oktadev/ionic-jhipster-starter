@@ -1,13 +1,18 @@
 {
   "NAME": "Namn",
+  "FIRST_NAME": "First Name",
+  "LAST_NAME": "Last Name",
   "PASSWORD": "Lösenord",
+  "REMEMBER_ME": "Remember Me",
   "EMAIL": "E-post",
+  "USERNAME": "Username",
   "LOGIN": "Logga in",
   "SIGNUP": "Skapa konto",
+  "NO_ACCOUNT_MESSAGE": "Don't have an account yet?",
 
   "TAB1_TITLE": "Inlägg",
   "TAB2_TITLE": "Sök",
-  "TAB3_TITLE": "Inställningar",
+  "TAB3_TITLE": "Konto",
 
   "MAP_TITLE": "Karta",
 
@@ -29,12 +34,16 @@
   "SETTINGS_PAGE_PROFILE": "Redigera profil",
 
   "WELCOME_TITLE": "Välkommen",
+  "LOGOUT_TITLE": "Logout",
 
   "LOGIN_TITLE": "Logga in",
   "LOGIN_ERROR": "Det gick inte att logga in. Kontrollera inloggningsuppgifterna och försök igen.",
   "LOGIN_BUTTON": "Logga in",
   "SIGNUP_TITLE": "Skapa konto",
   "SIGNUP_ERROR": "Det gick inte att skapa ett konto. Kontrollera dina uppgifter och försök igen.",
+  "SIGNUP_SUCCESS": "Registration saved! Please check your email for confirmation.",
+  "EXISTING_USER_ERROR": "Email is already in use! Please choose another one.",
+  "INVALID_PASSWORD_ERROR": "Invalid password, please try again.",
   "SIGNUP_BUTTON": "Skapa konto",
 
   "LIST_MASTER_TITLE": "Inlägg",
@@ -44,5 +53,6 @@
 
   "CARDS_TITLE": "Socialt",
 
-  "SEARCH_TITLE": "Sök"
+  "SEARCH_TITLE": "Sök",
+  "EMPTY_ENTITIES_MESSAGE": "You haven't generated entities yet. Run `yo jhipster-ionic:entity <name>`"
 }

@@ -1,13 +1,18 @@
 {
   "NAME": "Nom",
+  "FIRST_NAME": "Prénom",
+  "LAST_NAME": "Nom",
   "PASSWORD": "Mot de passe",
+  "REMEMBER_ME": "Se souvenir de moi",
   "EMAIL": "E-mail",
+  "USERNAME": "Nom d'utilisateur",
   "LOGIN": "Connexion",
   "SIGNUP": "Inscription",
+  "NO_ACCOUNT_MESSAGE": "Vous n'avez pas encore de compte ?",
 
-  "TAB1_TITLE": "Items",
-  "TAB2_TITLE": "Recherche",
-  "TAB3_TITLE": "Paramètres",
+  "TAB1_TITLE": "Accueil",
+  "TAB2_TITLE": "Entités",
+  "TAB3_TITLE": "Compte",
 
   "MAP_TITLE": "Carte",
 
@@ -20,6 +25,8 @@
   "TUTORIAL_SLIDE3_TITLE": "Pour commencer",
   "TUTORIAL_SLIDE3_DESCRIPTION": "Si vous avez besoin d’aide, consultez le README du Super Starter pour un tutoriel complet.",
 
+  "WELCOME_INTRO": "Le point d'entrée pour ta future application Ionic",
+
   "SETTINGS_TITLE": "Paramètres",
   "SETTINGS_OPTION1": "Option 1",
   "SETTINGS_OPTION2": "Option 2",
@@ -29,12 +36,16 @@
   "SETTINGS_PAGE_PROFILE": "Modifier le profil",
 
   "WELCOME_TITLE": "Bienvenue",
+  "LOGOUT_TITLE": "Déconnexion",
 
   "LOGIN_TITLE": "Connexion",
   "LOGIN_ERROR": "Connexion impossible. Veuillez vérifier les informations de votre compte et réessayer.",
   "LOGIN_BUTTON": "Connexion",
   "SIGNUP_TITLE": "Inscription",
   "SIGNUP_ERROR": "Inscription impossible. Veuillez vérifier les informations de votre compte et réessayer.",
+  "SIGNUP_SUCCESS": "Inscription enregistrée ! Un email de validation vous a été envoyé.",
+  "EXISTING_USER_ERROR": "Adresse email déjà utilisée ! Merci d'en choisir une autre.",
+  "INVALID_PASSWORD_ERROR": "Mot de passe invalide.",
   "SIGNUP_BUTTON": "Inscription",
 
   "LIST_MASTER_TITLE": "Items",
@@ -44,5 +55,6 @@
 
   "CARDS_TITLE": "Social",
 
-  "SEARCH_TITLE": "Recherche"
+  "SEARCH_TITLE": "Recherche",
+  "EMPTY_ENTITIES_MESSAGE": "Aucune entité générée. Tape `yo jhipster-ionic:entity <name>`"
 }

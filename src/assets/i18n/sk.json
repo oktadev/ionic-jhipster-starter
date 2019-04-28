@@ -2,15 +2,19 @@
   "BACK_BUTTON_TEXT": "Späť",
 
   "NAME": "Meno",
+  "FIRST_NAME": "First Name",
+  "LAST_NAME": "Last Name",
   "EMAIL": "Email",
   "USERNAME": "Prihlasovacie meno",
   "PASSWORD": "Heslo",
+  "REMEMBER_ME": "Remember Me",
   "LOGIN": "Prihlásiť",
   "SIGNUP": "Registrovať",
+  "NO_ACCOUNT_MESSAGE": "Don't have an account yet?",
 
   "TAB1_TITLE": "Položky",
   "TAB2_TITLE": "Hľadať",
-  "TAB3_TITLE": "Nastavenia",
+  "TAB3_TITLE": "Účet",
 
   "MAP_TITLE": "Mapa",
 
@@ -28,8 +32,6 @@
 
   "TUTORIAL_SLIDE4_TITLE": "Ste pripravený?",
 
-
-
   "WELCOME_INTRO": "Prvý krok vašej novej Ionic aplikácie.",
 
   "SETTINGS_TITLE": "Nastavenia",
@@ -40,31 +42,25 @@
 
   "SETTINGS_PROFILE_BUTTON": "Upraviť profil",
 
-
   "SETTINGS_PAGE_PROFILE": "Profil",
 
-
   "WELCOME_TITLE": "Vitajte",
-
-
-
-
+  "LOGOUT_TITLE": "Logout",
 
   "LOGIN_TITLE": "Prihlásenie",
   "LOGIN_ERROR": "Nedá sa prihlásiť. Skotrolujte zadané informácie a skuste to znova.",
   "LOGIN_BUTTON": "Prihlásiť",
   "SIGNUP_TITLE": "Registrácia",
   "SIGNUP_ERROR": "Nedá sa vytvoriť konto. Skotrolujte zadané informácie a skuste to znova.",
+  "SIGNUP_SUCCESS": "Registration saved! Please check your email for confirmation.",
+  "EXISTING_USER_ERROR": "Email is already in use! Please choose another one.",
+  "INVALID_PASSWORD_ERROR": "Invalid password, please try again.",
   "SIGNUP_BUTTON": "Registrovať",
 
   "LIST_MASTER_TITLE": "Položky",
 
   "ITEM_CREATE_TITLE": "Nová položka",
   "ITEM_CREATE_CHOOSE_IMAGE": "Pridať obrázok",
-
-
-
-
 
   "ITEM_NAME_PLACEHOLDER": "Názov",
   "ITEM_ABOUT_PLACEHOLDER": "O položke",
@@ -76,5 +72,6 @@
   "CARDS_TITLE": "Soc. siete",
 
   "SEARCH_TITLE": "Hľadať",
-  "SEARCH_PLACEHOLDER": "Napíšte hľadaný výraz, e.g. \"Donald Duck\""
+  "SEARCH_PLACEHOLDER": "Napíšte hľadaný výraz, e.g. \"Donald Duck\"",
+  "EMPTY_ENTITIES_MESSAGE": "You haven't generated entities yet. Run `yo jhipster-ionic:entity <name>`"
 }

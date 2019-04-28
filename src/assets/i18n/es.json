@@ -1,13 +1,18 @@
 {
   "NAME": "Nombre",
+  "FIRST_NAME": "First Name",
+  "LAST_NAME": "Last Name",
   "PASSWORD": "Contraseña",
+  "REMEMBER_ME": "Remember Me",
   "EMAIL": "Email",
+  "USERNAME": "Username",
   "LOGIN": "Iniciar sesión",
   "SIGNUP": "Registrarse",
+  "NO_ACCOUNT_MESSAGE": "Don't have an account yet?",
 
   "TAB1_TITLE": "Items",
   "TAB2_TITLE": "Buscar",
-  "TAB3_TITLE": "Ajustes",
+  "TAB3_TITLE": "Cuenta",
 
   "MAP_TITLE": "Mapa",
 
@@ -29,12 +34,16 @@
   "SETTINGS_PAGE_PROFILE": "Editar Perfil",
 
   "WELCOME_TITLE": "Bienvenido/a",
+  "LOGOUT_TITLE": "Logout",
 
   "LOGIN_TITLE": "Iniciar sesión",
   "LOGIN_ERROR": "No se ha podido iniciar sesión. Por favor revisa la información de la cuenta e inténtalo de nuevo.",
   "LOGIN_BUTTON": "Iniciar sesión",
   "SIGNUP_TITLE": "Registro",
   "SIGNUP_ERROR": "No se ha podido crear la cuenta. Por favor revisa la información de la cuenta e inténtalo de nuevo.",
+  "SIGNUP_SUCCESS": "Registration saved! Please check your email for confirmation.",
+  "EXISTING_USER_ERROR": "Email is already in use! Please choose another one.",
+  "INVALID_PASSWORD_ERROR": "Invalid password, please try again.",
   "SIGNUP_BUTTON": "Registrarse",
 
   "LIST_MASTER_TITLE": "Items",
@@ -44,5 +53,6 @@
 
   "CARDS_TITLE": "Social",
 
-  "SEARCH_TITLE": "Buscar"
+  "SEARCH_TITLE": "Buscar",
+  "EMPTY_ENTITIES_MESSAGE": "You haven't generated entities yet. Run `yo jhipster-ionic:entity <name>`"
 }

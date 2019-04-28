@@ -1,67 +1,45 @@
-import { async, TestBed } from '@angular/core/testing';
-import { Config, IonicModule, Platform } from 'ionic-angular';
-import { StatusBar } from '@ionic-native/status-bar';
-import { SplashScreen } from '@ionic-native/splash-screen';
-import { ConfigMock, PlatformMock, SplashScreenMock, StatusBarMock } from 'ionic-mocks-jest';
-import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-import { MyApp } from './app.component';
-import { IonicStorageModule, Storage } from '@ionic/storage';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { TestBed, async } from '@angular/core/testing';
 
-import * as en from '../assets/i18n/en.json';
-import { provideSettings } from './app.module';
-import { Settings } from '../providers/providers';
-import { Observable } from 'rxjs/Observable';
-import { of } from 'rxjs/observable/of';
+import { Platform } from '@ionic/angular';
+import { SplashScreen } from '@ionic-native/splash-screen/ngx';
+import { StatusBar } from '@ionic-native/status-bar/ngx';
 
-const TRANSLATIONS = {
-  EN: en
-};
+import { AppComponent } from './app.component';
 
-class JsonTranslationLoader implements TranslateLoader {
-  getTranslation(code: string = ''): Observable<object> {
-    const uppercased = code.toUpperCase();
-    return of(TRANSLATIONS[uppercased]);
-  }
-}
+describe('AppComponent', () => {
+  let statusBarSpy, splashScreenSpy, platformReadySpy, platformSpy;
 
-describe('MyApp Component', () => {
-  let fixture;
-  let component;
+  beforeEach(async(() => {
+    statusBarSpy = jasmine.createSpyObj('StatusBar', ['styleDefault']);
+    splashScreenSpy = jasmine.createSpyObj('SplashScreen', ['hide']);
+    platformReadySpy = Promise.resolve();
+    platformSpy = jasmine.createSpyObj('Platform', { ready: platformReadySpy });
 
-  beforeEach(
-    async(() => {
-      TestBed.configureTestingModule({
-        declarations: [MyApp],
-        imports: [
-          IonicModule.forRoot(MyApp),
-          TranslateModule.forRoot({
-            loader: { provide: TranslateLoader, useClass: JsonTranslationLoader }
-          }),
-          IonicStorageModule.forRoot({
-            name: 'storage',
-            driverOrder: ['localstorage'],
-          })],
-        providers: [
-          {provide: StatusBar, useFactory: () => StatusBarMock.instance()},
-          {provide: SplashScreen, useFactory: () => SplashScreenMock.instance()},
-          {provide: Platform, useFactory: () => PlatformMock.instance()},
-          {provide: Config, useFactory: () => ConfigMock.instance()},
-          {provide: Settings, useFactory: provideSettings, deps: [Storage]}
-        ]
-      });
-    })
-  );
+    TestBed.configureTestingModule({
+      declarations: [AppComponent],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA],
+      providers: [
+        { provide: StatusBar, useValue: statusBarSpy },
+        { provide: SplashScreen, useValue: splashScreenSpy },
+        { provide: Platform, useValue: platformSpy }
+      ]
+    }).compileComponents();
+  }));
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(MyApp);
-    component = fixture.componentInstance;
+  it('should create the app', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.debugElement.componentInstance;
+    expect(app).toBeTruthy();
   });
 
-  it('should be created', () => {
-    expect(component instanceof MyApp).toBe(true);
+  it('should initialize the app', async () => {
+    TestBed.createComponent(AppComponent);
+    expect(platformSpy.ready).toHaveBeenCalled();
+    await platformReadySpy;
+    expect(statusBarSpy.styleDefault).toHaveBeenCalled();
+    expect(splashScreenSpy.hide).toHaveBeenCalled();
   });
 
-  it('should show tabs page', () => {
-    expect(component.rootPage).toEqual('TabsPage');
-  });
+  // TODO: add more tests!
 });

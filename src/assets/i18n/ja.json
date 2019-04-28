@@ -2,15 +2,19 @@
   "BACK_BUTTON_TEXT": "戻る",
 
   "NAME": "名前",
+  "FIRST_NAME": "First Name",
+  "LAST_NAME": "Last Name",
   "EMAIL": "Eメール",
   "USERNAME": "ユーザー名",
   "PASSWORD": "パスワード",
+  "REMEMBER_ME": "Remember Me",
   "LOGIN": "サインイン",
   "SIGNUP": "サインアップ",
+  "NO_ACCOUNT_MESSAGE": "Don't have an account yet?",
 
   "TAB1_TITLE": "項目",
   "TAB2_TITLE": "検索",
-  "TAB3_TITLE": "設定",
+  "TAB3_TITLE": "アカウント",
 
   "MAP_TITLE": "地図",
 
@@ -41,12 +45,16 @@
   "SETTINGS_PAGE_PROFILE": "プロフィールの編集",
 
   "WELCOME_TITLE": "ようこそ",
+  "LOGOUT_TITLE": "Logout",
 
   "LOGIN_TITLE": "サインイン",
   "LOGIN_ERROR": "サインインできません。アカウント情報を確認して、もう一度お試しください。",
   "LOGIN_BUTTON": "サインイン",
   "SIGNUP_TITLE": "サインアップ",
   "SIGNUP_ERROR": "アカウントを作成できません。 アカウント情報を確認して、もう一度お試しください。",
+  "SIGNUP_SUCCESS": "Registration saved! Please check your email for confirmation.",
+  "EXISTING_USER_ERROR": "Email is already in use! Please choose another one.",
+  "INVALID_PASSWORD_ERROR": "Invalid password, please try again.",
   "SIGNUP_BUTTON": "サインアップ",
 
   "LIST_MASTER_TITLE": "項目",
@@ -64,5 +72,6 @@
   "CARDS_TITLE": "ソーシャル",
 
   "SEARCH_TITLE": "検索",
-  "SEARCH_PLACEHOLDER": "項目一覧を検索 例 \"Donald Duck\""
+  "SEARCH_PLACEHOLDER": "項目一覧を検索 例 \"Donald Duck\"",
+  "EMPTY_ENTITIES_MESSAGE": "You haven't generated entities yet. Run `yo jhipster-ionic:entity <name>`"
 }

@@ -10,10 +10,11 @@
   "REMEMBER_ME": "Remember Me",
   "LOGIN": "Sign in",
   "SIGNUP": "Sign up",
+  "NO_ACCOUNT_MESSAGE": "Don't have an account yet?",
 
   "TAB1_TITLE": "Home",
   "TAB2_TITLE": "Entities",
-  "TAB3_TITLE": "Settings",
+  "TAB3_TITLE": "Account",
 
   "MAP_TITLE": "Map",
 
@@ -44,6 +45,7 @@
   "SETTINGS_PAGE_PROFILE": "Edit Profile",
 
   "WELCOME_TITLE": "Welcome",
+  "LOGOUT_TITLE": "Logout",
 
   "LOGIN_TITLE": "Sign in",
   "LOGIN_ERROR": "Unable to sign in. Please check your account information and try again.",
@@ -72,5 +74,6 @@
   "CARDS_TITLE": "Social",
 
   "SEARCH_TITLE": "Search",
-  "SEARCH_PLACEHOLDER": "Search the items list, e.g. \"Donald Duck\""
+  "SEARCH_PLACEHOLDER": "Search the items list, e.g. \"Donald Duck\"",
+  "EMPTY_ENTITIES_MESSAGE": "You haven't generated entities yet. Run `yo jhipster-ionic:entity <name>`"
 }
