@@ -1,4 +1,4 @@
-# [BETA] The Ionic4 JHipster Starter 🤓
+# The Ionic JHipster Starter 🤓
 
 > Because Ionic Apps need some JHipster 💙 too!
 
@@ -10,7 +10,9 @@
 The Ionic JHipster Starter is designed to be used with a JHipster backend that uses JWT Authentication.
 You can create a project with it directly, or use [Ionic for JHipster](https://github.com/oktadeveloper/generator-jhipster-ionic).
 
-This project provides a base template of functionality for an Ionic app. The Ionic for JHipster module provides ~~entity generation and additional features that require logic to install (e.g. OAuth authentication)~~.
+This project provides a base template of functionality for an Ionic app. The Ionic for JHipster module provides entity generation and additional features that require logic to install (e.g. OAuth authentication).
+
+This project is in a beta state, see its [v1.0 milestone](https://github.com/oktadeveloper/ionic-jhipster-starter/milestone/2) for progress towards a release.
 
 [![Build Status][travis-image]][travis-url]
 
@@ -27,7 +29,7 @@ This project provides a base template of functionality for an Ionic app. The Ion
 To use this starter, install the latest version of the Ionic CLI and run:
 
 ```bash
-ionic start ionic4j fleboulch/jhipster
+ionic start ionic4j oktadeveloper/jhipster
 ```
 
 You can also install it using the [Ionic for JHipster Module](https://github.com/oktadeveloper/generator-jhipster-ionic):
@@ -37,7 +39,11 @@ npm install -g generator-jhipster-ionic
 yo jhipster-ionic
 ```
 
-~~This module allows you to generate entities using:~~
+This module allows you to generate entities using:
+
+```bash	
+yo jhipster-ionic:entity <name>	
+```
 
 ### Tips
 
@@ -53,7 +59,8 @@ The emulator runs on port 8080, so you will need to change your backend to run o
 ```
 {jhipster-project}/src/main/resources/config/application-dev.yml
 {jhipster-project}/webpack/webpack.dev.js
-{ionic-project}/src/environments/environment{.prod}.ts 
+{ionic-project}/src/providers/api/api.ts # for Ionic3 only
+{ionic-project}/src/environments/environment{.prod}.ts # for Ionic4 only 
 ```
 
 ## Pages
@@ -147,7 +154,7 @@ npm run e2e
 
 The [Protractor configuration](test/protractor.conf.js) uses [serve](https://www.npmjs.com/package/serve) to serve up the contents of `www` on port 8100 before running its tests.
 
-Apache-2.0
+Apache-2.0 © [Okta](https://developer.okta.com/)
 
 [travis-image]: https://travis-ci.org/oktadeveloper/ionic-jhipster-starter.svg?branch=master
 [travis-url]: https://travis-ci.org/oktadeveloper/ionic-jhipster-starter
