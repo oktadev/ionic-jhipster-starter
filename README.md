@@ -119,6 +119,8 @@ There are a number of scripts in `package.json` you can use to run tests:
 - Built-in code coverage reports
 - Zero configuration
 
+**NOTE:** If you'd like to convert your project so you can run `ng test` to run your tests, see [Angular CLI: "ng test" with Jest in 3 minutes](https://codeburst.io/angular-6-ng-test-with-jest-in-3-minutes-b1fe5ed3417c).
+
 To run a unit test you have three options.
 
 1. Run `npm test` runs all your created unit-tests
