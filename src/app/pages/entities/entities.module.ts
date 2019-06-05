@@ -16,6 +16,7 @@ const routes: Routes = [
     },
     canActivate: [UserRouteAccessService]
   }
+  /* jhipster-needle-add-entity-route - JHipster will add entity modules routes here */
 ];
 
 @NgModule({
