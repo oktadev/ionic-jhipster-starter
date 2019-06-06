@@ -14,7 +14,7 @@ export class EntitiesPage {
   constructor(public navController: NavController) {}
 
   openPage(page) {
-    this.navController.navigateForward('/tabs/entities/' + page.component);
+    this.navController.navigateForward('/tabs/entities/' + page.route);
   }
 
 }
