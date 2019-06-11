@@ -12,8 +12,6 @@ You can create a project with it directly, or use [Ionic for JHipster](https://g
 
 This project provides a base template of functionality for an Ionic app. The Ionic for JHipster module provides entity generation and additional features that require logic to install (e.g. OAuth authentication).
 
-This project is in a beta state, see its [v1.0 milestone](https://github.com/oktadeveloper/ionic-jhipster-starter/milestone/2) for progress towards a release.
-
 [![Build Status][travis-image]][travis-url]
 
 ## Table of Contents
