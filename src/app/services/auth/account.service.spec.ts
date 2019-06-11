@@ -1,12 +1,11 @@
 import { TestBed } from '@angular/core/testing';
 import { AccountService } from './account.service';
-import { SessionStorageService } from 'ngx-webstorage';
+import { NgxWebstorageModule } from 'ngx-webstorage';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 describe('AccountService', () => {
   beforeEach(() => TestBed.configureTestingModule({
-    imports: [HttpClientTestingModule],
-    providers: [SessionStorageService]
+    imports: [HttpClientTestingModule, NgxWebstorageModule.forRoot()]
   }));
 
   it('should be created', () => {
