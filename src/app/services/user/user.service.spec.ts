@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { UserService } from './user.service';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
-import { Ng2Webstorage } from 'ngx-webstorage';
+import { NgxWebstorageModule } from 'ngx-webstorage';
 import { TranslateModule } from '@ngx-translate/core';
 
 describe('UserService', () => {
@@ -9,7 +9,7 @@ describe('UserService', () => {
     imports: [
       HttpClientTestingModule,
       TranslateModule.forRoot(),
-      Ng2Webstorage.forRoot()]
+      NgxWebstorageModule.forRoot()]
   }));
 
   it('should be created', () => {
