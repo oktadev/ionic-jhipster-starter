@@ -13,11 +13,6 @@ describe('App', () => {
       page.navigateTo('/');
     });
 
-    it('should redirect to welcome', () => {
-      const EC = protractor.ExpectedConditions;
-      browser.wait(EC.urlContains('/#/welcome'), 5000);
-    });
-
     it('should have the correct title', () => {
       page.getTitle().then(title => {
         expect(title).toEqual('Ionic App');
