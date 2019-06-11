@@ -107,8 +107,8 @@ There are a number of scripts in `package.json` you can use to run tests:
 "test:ci": "jest --runInBand",
 "test:coverage": "jest --coverage",
 "e2e": "npm run e2e-update && npm run e2e-test",
-"e2e-test": "protractor ./test-config/protractor.conf.js",
-"e2e-update": "webdriver-manager update --standalone false --gecko false"
+"e2e-test": "protractor ./e2e/protractor.conf.js",
+"e2e-update": "node node_modules/webdriver-manager/bin/webdriver-manager update --gecko false"
 ```
 
 ### Unit Tests
@@ -147,14 +147,12 @@ Add your pages into the `/pages` folder and your tests into the `/spec` folder.
 
 See the example end-to-end test in [`e2e/spec/app.e2e-spec.ts`](e2e/spec/app.e2e-spec.ts).
 
-To run the e2e tests, build your app for production, then run the tests.
+To run the e2e tests, start your app, then run the tests (in two separate terminal windows):
 
 ```bash
-npm run build --prod
+ionic serve
 npm run e2e
 ```
-
-The [Protractor configuration](test/protractor.conf.js) uses [serve](https://www.npmjs.com/package/serve) to serve up the contents of `www` on port 8100 before running its tests.
 
 Apache-2.0 © [Okta](https://developer.okta.com/)
 
