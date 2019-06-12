@@ -23,22 +23,20 @@ before_install:
   - export BRANCH=$(if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo $TRAVIS_BRANCH; else echo $TRAVIS_PULL_REQUEST_BRANCH; fi)
   - echo "TRAVIS_BRANCH=$TRAVIS_BRANCH, PR=$PR, BRANCH=$BRANCH"
 install:
-  - echo $(pwd)
-  - echo $TRAVIS_BUILD_DIR
-  - cd .. && git clone https://github.com/ionic-team/starters.git
-  - cd starters
-  - echo $(pwd)
-  - ls -lh
-  - ls -lh ..
+  - cd $HOME/build && git clone https://github.com/ionic-team/starters.git ionic-team/starters
+  - cd $HOME/build/ionic-team/starters
   - git submodule update --init
   - npm install
   - cd angular/community/oktadeveloper/jhipster && git pull origin $BRANCH
   - echo $(pwd)
+  - cd $HOME/build/ionic-team/starters
+  - echo $(pwd)
   - npm run src:build
 script:
-  - cd $TRAVIS_BUILD_DIR/starters && npm run starters:build -- angular/community/oktadeveloper/jhipster
-  - cd $TRAVIS_BUILD_DIR/starters && npm run starters:test -- angular-community-oktadeveloper-jhipster
-  - cd $TRAVIS_BUILD_DIR/starters/build/angular-community-oktadeveloper-jhipster
+  - cd $HOME/build/ionic-team/starters
+  - npm run starters:build -- angular/community/oktadeveloper/jhipster
+  - npm run starters:test -- angular-community-oktadeveloper-jhipster
+  - cd build/angular-community-oktadeveloper-jhipster
   - ionic serve &
   - sleep 20
   - npm run e2e
