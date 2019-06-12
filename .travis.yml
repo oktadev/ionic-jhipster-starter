@@ -24,9 +24,9 @@ before_install:
   - echo "TRAVIS_BRANCH=$TRAVIS_BRANCH, PR=$PR, BRANCH=$BRANCH"
 install:
   - git clone https://github.com/ionic-team/starters.git
-  - cd starters && git submodule update --init
-  - cd $TRAVIS_BUILD_DIR/starters/angular/community/oktadeveloper/jhipster && git pull origin $BRANCH
   - cd $TRAVIS_BUILD_DIR/starters && npm i && npm run src:build
+  - cd $TRAVIS_BUILD_DIR/starters && git submodule update --init
+  - cd $TRAVIS_BUILD_DIR/starters/angular/community/oktadeveloper/jhipster && git pull origin $BRANCH
 script:
   - cd $TRAVIS_BUILD_DIR/starters && npm run starters:build -- angular/community/oktadeveloper/jhipster
   - cd $TRAVIS_BUILD_DIR/starters && npm run starters:test -- angular-community-oktadeveloper-jhipster
