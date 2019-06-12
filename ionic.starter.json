@@ -90,10 +90,7 @@
     "idea/"
   ],
   "tsconfigJson": {
-    "types": ["jest"],
-    "exclude": [
-      "node_modules"
-    ]
+    "types": ["jest"]
   },
   "tarignore": [
     ".travis.yml",
