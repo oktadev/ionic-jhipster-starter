@@ -24,10 +24,10 @@ install:
   - echo
   - git clone https://github.com/ionic-team/starters.git
   - cd starters && git submodule update --init
-  - cd $TRAVIS_BUILD_DIR/starters/ionic-angular/community/oktadeveloper/jhipster && git pull origin $TRAVIS_BRANCH
+  - cd $TRAVIS_BUILD_DIR/starters/angular/community/oktadeveloper/jhipster && git pull origin $TRAVIS_BRANCH
   - cd $TRAVIS_BUILD_DIR/starters && npm i && npm run src:build
-  - cd $TRAVIS_BUILD_DIR/starters && npm run starters:build -- ionic-angular/community/oktadeveloper/jhipster
-  - cd $TRAVIS_BUILD_DIR/starters/build/ionic-angular-community-oktadeveloper-jhipster && npm i
+  - cd $TRAVIS_BUILD_DIR/starters && npm run starters:build -- angular/community/oktadeveloper/jhipster
+  - cd $TRAVIS_BUILD_DIR/starters && npm run starters:test -- angular-community-oktadeveloper-jhipster
 script:
   - npm test
   - npm run build --prod
