@@ -6,10 +6,13 @@ import { ApiService } from '../services/api/api.service';
 
 @Injectable()
 export class AuthInterceptor implements HttpInterceptor {
+  private servicesEndpoint = ApiService.API_URL.replace('api', 'services');
+
   constructor(private localStorage: LocalStorageService, private sessionStorage: SessionStorageService) {}
 
   intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-    if (!request || !request.url || (/^http/.test(request.url) && !(ApiService.API_URL && request.url.startsWith(ApiService.API_URL)))) {
+    if (!request || !request.url || (/^http/.test(request.url) &&
+      !request.url.startsWith(ApiService.API_URL) && !request.url.startsWith(this.servicesEndpoint))) {
       return next.handle(request);
     }
 
