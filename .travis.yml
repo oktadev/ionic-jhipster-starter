@@ -29,8 +29,11 @@ install:
   - cd $TRAVIS_BUILD_DIR/starters && npm run starters:build -- angular/community/oktadeveloper/jhipster
   - cd $TRAVIS_BUILD_DIR/starters && npm run starters:test -- angular-community-oktadeveloper-jhipster
 script:
-  - npm test
-  - npm run build --prod
+  - cd $TRAVIS_BUILD_DIR/starters && npm run starters:build -- angular/community/oktadeveloper/jhipster
+  - cd $TRAVIS_BUILD_DIR/starters && npm run starters:test -- angular-community-oktadeveloper-jhipster
+  - cd $TRAVIS_BUILD_DIR/starters/build/angular-community-oktadeveloper-jhipster
+  - ionic serve &
+  - sleep 20
   - npm run e2e
 notifications:
   webhooks:
