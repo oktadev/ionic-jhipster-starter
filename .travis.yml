@@ -28,12 +28,8 @@ install:
   - git submodule update --init
   - npm install
   - cd angular/community/oktadeveloper/jhipster && git pull origin $BRANCH
-  - echo $(pwd)
-  - cd $HOME/build/ionic-team/starters
-  - echo $(pwd)
-  - npm run src:build
 script:
-  - cd $HOME/build/ionic-team/starters
+  - cd $HOME/build/ionic-team/starters && npm run src:build
   - npm run starters:build -- angular/community/oktadeveloper/jhipster
   - npm run starters:test -- angular-community-oktadeveloper-jhipster
   - cd build/angular-community-oktadeveloper-jhipster
