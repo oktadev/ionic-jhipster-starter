@@ -4,7 +4,7 @@ services:
   - docker
 language: node_js
 node_js:
-  - "9.8.0"
+  - "10.16.0"
 addons:
   apt:
     sources:
@@ -20,17 +20,21 @@ before_install:
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
   - npm install -g ionic
+  - export BRANCH=$(if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo $TRAVIS_BRANCH; else echo $TRAVIS_PULL_REQUEST_BRANCH; fi)
+  - echo "TRAVIS_BRANCH=$TRAVIS_BRANCH, PR=$PR, BRANCH=$BRANCH"
 install:
-  - echo
-  - git clone https://github.com/ionic-team/starters.git
-  - cd starters && git submodule update --init
-  - cd $TRAVIS_BUILD_DIR/starters/ionic-angular/community/oktadeveloper/jhipster && git pull origin $TRAVIS_BRANCH
-  - cd $TRAVIS_BUILD_DIR/starters && npm i && npm run src:build
-  - cd $TRAVIS_BUILD_DIR/starters && npm run starters:build -- ionic-angular/community/oktadeveloper/jhipster
-  - cd $TRAVIS_BUILD_DIR/starters/build/ionic-angular-community-oktadeveloper-jhipster && npm i
+  - cd $HOME/build && git clone https://github.com/ionic-team/starters.git ionic-team/starters
+  - cd $HOME/build/ionic-team/starters
+  - git submodule update --init
+  - npm install
+  - cd angular/community/oktadeveloper/jhipster && git pull origin $BRANCH
 script:
-  - npm test
-  - npm run build --prod
+  - cd $HOME/build/ionic-team/starters && npm run src:build
+  - npm run starters:build -- angular/community/oktadeveloper/jhipster
+  - npm run starters:test -- angular-community-oktadeveloper-jhipster
+  - cd build/angular-community-oktadeveloper-jhipster
+  - ionic serve &
+  - sleep 20
   - npm run e2e
 notifications:
   webhooks:
