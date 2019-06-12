@@ -4,7 +4,7 @@ services:
   - docker
 language: node_js
 node_js:
-  - "10.15.3"
+  - "10.16.0"
 addons:
   apt:
     sources:
@@ -26,6 +26,7 @@ install:
   - cd $TRAVIS_BUILD_DIR/starters/angular/community/oktadeveloper/jhipster && git pull origin $TRAVIS_BRANCH
   - cd $TRAVIS_BUILD_DIR/starters && npm i
 script:
+  - cd $TRAVIS_BUILD_DIR/starters && npm run src:build
   - cd $TRAVIS_BUILD_DIR/starters && npm run starters:build -- angular/community/oktadeveloper/jhipster
   - cd $TRAVIS_BUILD_DIR/starters && npm run starters:test -- angular-community-oktadeveloper-jhipster
   - cd $TRAVIS_BUILD_DIR/starters/build/angular-community-oktadeveloper-jhipster
