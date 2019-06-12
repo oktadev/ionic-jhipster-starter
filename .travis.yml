@@ -25,11 +25,10 @@ before_install:
 install:
   - git clone https://github.com/ionic-team/starters.git
   - cd starters
-  - git submodule sync
   - git submodule update --init
   - npm install
-  - npm run src:build
   - rm -rf node_modules/@types
+  - npm run src:build
   - cd angular/community/oktadeveloper/jhipster && git pull origin $BRANCH
 script:
   - cd $TRAVIS_BUILD_DIR/starters && npm run starters:build -- angular/community/oktadeveloper/jhipster
