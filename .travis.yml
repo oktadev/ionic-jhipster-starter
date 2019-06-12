@@ -21,7 +21,6 @@ before_install:
   - sh -e /etc/init.d/xvfb start
   - npm install -g ionic
 install:
-  - echo
   - git clone https://github.com/ionic-team/starters.git
   - cd starters && git submodule update --init
   - cd $TRAVIS_BUILD_DIR/starters/angular/community/oktadeveloper/jhipster && git pull origin $TRAVIS_BRANCH
