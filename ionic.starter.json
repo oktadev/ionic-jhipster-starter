@@ -18,7 +18,11 @@
       "@ngx-translate/core": "11.0.1",
       "@ngx-translate/http-loader": "4.0.0",
       "ngx-webstorage": "3.0.2",
-      "ng-jhipster": "0.10.1"
+      "ng-jhipster": "0.9.3",
+      "@fortawesome/angular-fontawesome": "^0.3.0",
+      "@fortawesome/fontawesome-svg-core": "^1.2.19",
+      "@fortawesome/free-solid-svg-icons": "^5.9.0",
+      "@ng-bootstrap/ng-bootstrap": "^4.2.1"
     },
     "devDependencies": {
       "generator-jhipster": "^6.0.1",
