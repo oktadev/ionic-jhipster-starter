@@ -11,7 +11,8 @@
       "test:coverage": "jest --coverage",
       "e2e": "npm run e2e-update && npm run e2e-test",
       "e2e-test": "protractor ./e2e/protractor.conf.js",
-      "e2e-update": "node node_modules/webdriver-manager/bin/webdriver-manager update --gecko false"
+      "e2e-update": "node node_modules/webdriver-manager/bin/webdriver-manager update --gecko false",
+      "prettier:format": "prettier --write \"{,src/**/}*.{md,json,ts,tsx,css,scss,yml}\""
     },
     "dependencies": {
       "@ionic-native/camera": "5.3.0",
@@ -34,9 +35,11 @@
       "jest-localstorage-mock": "2.4.0",
       "jest-preset-angular": "7.0.1",
       "null-loader": "0.1.1",
+      "prettier": "1.16.4",
       "protractor": "5.4.2",
       "ts-loader": "5.3.3",
       "ts-node": "8.0.3",
+      "tslint-config-prettier": "1.18.0",
       "webdriver-manager": "12.1.5"
     },
     "cordova": {
@@ -90,6 +93,12 @@
     "coverage/",
     "idea/"
   ],
+  "lint-staged": {
+    "{,src/**/}*.{md,json,ts,tsx,css,scss,yml}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
   "tsconfigJson": {
     "types": ["jest"]
   },
