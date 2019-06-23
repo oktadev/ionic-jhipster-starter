@@ -93,12 +93,6 @@
     "coverage/",
     "idea/"
   ],
-  "lint-staged": {
-    "{,src/**/}*.{md,json,ts,tsx,css,scss,yml}": [
-      "prettier --write",
-      "git add"
-    ]
-  },
   "tsconfigJson": {
     "types": ["jest"]
   },
