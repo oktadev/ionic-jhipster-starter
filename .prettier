@@ -10,4 +10,3 @@ arrowParens: avoid
 
 # jsx and tsx rules:
 jsxBracketSameLine: false
-
