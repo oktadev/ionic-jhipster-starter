@@ -12,7 +12,7 @@
       "e2e": "npm run e2e-update && npm run e2e-test",
       "e2e-test": "protractor ./e2e/protractor.conf.js",
       "e2e-update": "node node_modules/webdriver-manager/bin/webdriver-manager update --gecko false",
-      "prettier:format": "prettier --write '{,src/**/}*.{md,json,ts,tsx,css,scss,yml}'"
+      "prettier": "prettier \"**/*.{md,json,ts,tsx,css,scss}\""
     },
     "dependencies": {
       "@ionic-native/camera": "5.3.0",
