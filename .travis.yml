@@ -33,6 +33,7 @@ script:
   - npm run starters:build -- angular/community/oktadeveloper/jhipster
   - npm run starters:test -- angular-community-oktadeveloper-jhipster
   - cd build/angular-community-oktadeveloper-jhipster
+  - ls -la .
   - cat package.json
   - ionic serve &
   - sleep 20
