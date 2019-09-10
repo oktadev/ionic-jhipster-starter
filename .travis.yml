@@ -33,6 +33,7 @@ script:
   - npm run starters:build -- angular/community/oktadeveloper/jhipster
   - npm run starters:test -- angular-community-oktadeveloper-jhipster
   - cd build/angular-community-oktadeveloper-jhipster
+  - cat package.json
   - ionic serve &
   - sleep 20
   - npm run e2e
