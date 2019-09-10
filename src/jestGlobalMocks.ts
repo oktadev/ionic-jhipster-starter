@@ -13,14 +13,3 @@ Object.defineProperty(window, 'sessionStorage', { value: mock() });
 Object.defineProperty(window, 'getComputedStyle', {
   value: (): string[] => ['-webkit-appearance']
 });
-
-/**
- * fix: `win.matchMedia` is not a function
- */
-window.matchMedia = window.matchMedia || function() {
-  return {
-    matches : false,
-    addListener : function() {},
-    removeListener: function() {}
-  }
-}
