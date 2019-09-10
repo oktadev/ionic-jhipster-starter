@@ -1,7 +1,7 @@
 {
   "name": "JHipster Starter",
-  "baseref": "a1abd0df2aaa0ab46c8c6495e1f63e07c4f7c977",
-  "welcome": "Welcome to the \u001b[34m\u001b[1mIonic\u001b[22m\u001b[39m \u001b[32m\u001b[1mJ\u001b[22m\u001b[39m\u001b[31m\u001b[1mHipster\u001b[22m\u001b[39m Starter!\n\nThe Ionic JHipster Starter ships with login and signup that will work with a JHipster backend (with JWT Authentication). \n\nFor more details, please see the project's README: \u001b[1mhttps://github.com/oktadeveloper/ionic-jhipster-starter/blob/master/README.md\u001b[22m",
+  "baseref": "fe15a3f7b2b04e7bfb1b1f21ab20f57a694fabf7",
+  "welcome": "Welcome to the \u001b[34m\u001b[1mIonic\u001b[22m\u001b[39m \u001b[32m\u001b[1mJ\u001b[22m\u001b[39m\u001b[31m\u001b[1mHipster\u001b[22m\u001b[39m Starter!\n\nFor more details, please see the project's README: \u001b[1mhttps://github.com/oktadeveloper/ionic-jhipster-starter/blob/master/README.md\u001b[22m",
   "packageJson": {
     "scripts": {
       "start": "ionic serve",
@@ -14,18 +14,18 @@
       "e2e-update": "node node_modules/webdriver-manager/bin/webdriver-manager update --gecko false"
     },
     "dependencies": {
-      "@ionic-native/camera": "5.3.0",
+      "@ionic-native/camera": "5.13.0",
       "@ngx-translate/core": "11.0.1",
       "@ngx-translate/http-loader": "4.0.0",
-      "ngx-webstorage": "3.0.2",
-      "ng-jhipster": "0.9.3",
-      "@fortawesome/angular-fontawesome": "^0.3.0",
-      "@fortawesome/fontawesome-svg-core": "^1.2.19",
-      "@fortawesome/free-solid-svg-icons": "^5.9.0",
-      "@ng-bootstrap/ng-bootstrap": "^4.2.1"
+      "ngx-webstorage": "4.0.1",
+      "ng-jhipster": "0.11.1",
+      "@fortawesome/angular-fontawesome": "0.5.0",
+      "@fortawesome/fontawesome-svg-core": "1.2.22",
+      "@fortawesome/free-solid-svg-icons": "5.10.2",
+      "@ng-bootstrap/ng-bootstrap": "5.1.1"
     },
     "devDependencies": {
-      "generator-jhipster": "^6.0.1",
+      "generator-jhipster": "6.2.0",
       "@types/node": "11.12.2",
       "@types/jest": "24.0.11",
       "typescript": "3.1.1",

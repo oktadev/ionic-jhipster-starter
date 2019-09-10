@@ -7,8 +7,7 @@
     <a href="http://www.jhipster.tech"><img src="src/assets/img/jhipster-logo.png" alt="JHipster" width="68"></a>
 </div>
 
-The Ionic JHipster Starter is designed to be used with a JHipster backend that uses JWT Authentication.
-You can create a project with it directly, or use [Ionic for JHipster](https://github.com/oktadeveloper/generator-jhipster-ionic).
+The Ionic JHipster Starter is designed to be used with a JHipster backend. You can create a project with it directly, or use [Ionic for JHipster](https://github.com/oktadeveloper/generator-jhipster-ionic).
 
 This project provides a base template of functionality for an Ionic app. The Ionic for JHipster module provides entity generation and additional features that require logic to install (e.g. OAuth authentication).
 
@@ -33,7 +32,7 @@ ionic start ionic4j oktadeveloper/jhipster
 You can also install it using the [Ionic for JHipster Module](https://github.com/oktadeveloper/generator-jhipster-ionic):
 
 ```bash
-npm install -g generator-jhipster-ionic
+npm install -g generator-jhipster-ionic ionic @angular/cli
 yo jhipster-ionic
 ```
 
@@ -43,22 +42,19 @@ This module allows you to generate entities using:
 yo jhipster-ionic:entity <name>	
 ```
 
+Or by importing JDL:
+
+```bash
+yo jhipster-ionic:import-jdl <file.jdl>
+```
+
 ### Tips
 
-You will need to enable CORS in your backend's `src/main/resources/config/application.yml` file. Set the allowed-origins so it works with `ionic serve`:
+In production, you will need to enable CORS in your backend's `src/main/resources/config/application-prod.yml` file. Set the allowed-origins so it works with `ionic serve`:
          
 ```yaml
 cors:
     allowed-origins: "http://localhost:8100"
-```
-         
-The emulator runs on port 8080, so you will need to change your backend to run on a different port (e.g., 8888) when running `ionic cordova emulate`. Port 8080 is specified in the following files:
-
-```
-{jhipster-project}/src/main/resources/config/application-dev.yml
-{jhipster-project}/webpack/webpack.dev.js
-{ionic-project}/src/providers/api/api.ts # for Ionic3 only
-{ionic-project}/src/environments/environment{.prod}.ts # for Ionic4 only 
 ```
 
 ## Pages
@@ -77,7 +73,7 @@ requests to an API endpoint that you will need to configure.
 
 ### Api
 
-The `Api` service is a simple CRUD frontend to an API.
+The `ApiService` is a simple CRUD frontend to an API.
 
 ## i18n
 
