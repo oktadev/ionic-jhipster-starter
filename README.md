@@ -26,7 +26,7 @@ This project provides a base template of functionality for an Ionic app. The Ion
 To use this starter, install the latest version of the Ionic CLI and run:
 
 ```bash
-ionic start ionic4j oktadeveloper/jhipster
+ionic start ionic4j oktadeveloper/jhipster --type angular
 ```
 
 You can also install it using the [Ionic for JHipster Module](https://github.com/oktadeveloper/generator-jhipster-ionic):
