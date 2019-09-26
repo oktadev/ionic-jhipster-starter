@@ -106,8 +106,5 @@
     "node_modules",
     "package-lock.json",
     "www"
-  ],
-  "scripts": {
-    "test": "npm test"
-  }
+  ]
 }
