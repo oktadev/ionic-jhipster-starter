@@ -11,7 +11,7 @@
       "test:coverage": "jest --coverage",
       "e2e": "npm run e2e-update && npm run e2e-test",
       "e2e-test": "protractor ./e2e/protractor.conf.js",
-      "e2e-update": "webdriver-manager update --gecko false"
+      "e2e-update": "node node_modules/webdriver-manager/bin/webdriver-manager update --gecko false"
     },
     "dependencies": {
       "@ionic-native/camera": "5.13.0",
@@ -43,7 +43,7 @@
       "ts-loader": "6.0.4",
       "ts-node": "8.3.0",
       "tslint-config-prettier": "1.18.0",
-      "webdriver-manager": "12.1.6"
+      "webdriver-manager": "12.1.7"
     },
     "cordova": {
       "plugins": {
