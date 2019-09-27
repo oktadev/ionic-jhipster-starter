@@ -6,19 +6,19 @@ services:
   - xvfb
 language: node_js
 node_js:
-  - "10.16.3"
+  - "11.10.1"
+# Install Chrome
 addons:
   apt:
-    sources:
-    - google-chrome
     packages:
-    - google-chrome-stable
+      - dpkg
+  chrome: stable
 sudo: false
 cache:
   directories:
     - node_modules
 before_install:
-  - npm install -g ionic @angular/cli
+  - npm install -g ionic @angular/cli yo
   - export BRANCH=$(if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo $TRAVIS_BRANCH; else echo $TRAVIS_PULL_REQUEST_BRANCH; fi)
   - echo "TRAVIS_BRANCH=$TRAVIS_BRANCH, PR=$PR, BRANCH=$BRANCH"
 install:
