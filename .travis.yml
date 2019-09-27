@@ -18,7 +18,7 @@ cache:
   directories:
     - node_modules
 before_install:
-  - npm install -g ionic
+  - npm install -g ionic @angular/cli
   - export BRANCH=$(if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo $TRAVIS_BRANCH; else echo $TRAVIS_PULL_REQUEST_BRANCH; fi)
   - echo "TRAVIS_BRANCH=$TRAVIS_BRANCH, PR=$PR, BRANCH=$BRANCH"
 install:
@@ -30,8 +30,9 @@ install:
 script:
   - cd $HOME/build/ionic-team/starters && npm run src:build
   - npm run starters:build -- angular/community/oktadeveloper/jhipster
-  - npm run starters:test -- angular-community-oktadeveloper-jhipster
+  # npm run starters:test -- angular-community-oktadeveloper-jhipster
   - cd build/angular-community-oktadeveloper-jhipster
+  - npm test
   - ls -la .
   - cat package.json
   - ionic serve &
