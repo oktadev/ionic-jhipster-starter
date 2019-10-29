@@ -7,7 +7,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content class="ion-padding">
   <form (submit)="doSignup()">
     <ion-list>
 
@@ -31,7 +31,7 @@
         <ion-input type="password" [(ngModel)]="account.password" name="password"></ion-input>
       </ion-item>
 
-      <ion-row padding>
+      <ion-row class="ion-padding">
         <ion-col>
           <ion-button expand="block" type="submit" color="primary">{{ 'SIGNUP_BUTTON' | translate }}</ion-button>
         </ion-col>
