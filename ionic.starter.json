@@ -1,6 +1,6 @@
 {
   "name": "JHipster Starter",
-  "baseref": "fe15a3f7b2b04e7bfb1b1f21ab20f57a694fabf7",
+  "baseref": "20689cb5586ac417ada8f7ef847918d368f92fa3",
   "welcome": "Welcome to the \u001b[34m\u001b[1mIonic\u001b[22m\u001b[39m \u001b[32m\u001b[1mJ\u001b[22m\u001b[39m\u001b[31m\u001b[1mHipster\u001b[22m\u001b[39m Starter!\n\nFor more details, please see the project's README: \u001b[1mhttps://github.com/oktadeveloper/ionic-jhipster-starter/blob/master/README.md\u001b[22m",
   "packageJson": {
     "scripts": {
@@ -25,7 +25,7 @@
       "@ng-bootstrap/ng-bootstrap": "5.1.1"
     },
     "devDependencies": {
-      "generator-jhipster": "6.2.0",
+      "generator-jhipster": "6.4.0",
       "@types/node": "12.7.4",
       "@types/jest": "24.0.18",
       "typescript": "3.4.5",
