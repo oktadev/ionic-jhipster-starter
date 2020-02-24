@@ -6,8 +6,7 @@ services:
   - xvfb
 language: node_js
 node_js:
-  - "11.10.1"
-# Install Chrome
+  - "12.16.1"
 addons:
   apt:
     packages:
@@ -18,7 +17,7 @@ cache:
   directories:
     - node_modules
 before_install:
-  - npm install -g ionic
+  - npm install -g @ionic/cli
   - export BRANCH=$(if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo $TRAVIS_BRANCH; else echo $TRAVIS_PULL_REQUEST_BRANCH; fi)
   - echo "TRAVIS_BRANCH=$TRAVIS_BRANCH, PR=$PR, BRANCH=$BRANCH"
 install:
@@ -42,4 +41,4 @@ notifications:
   webhooks:
     on_success: always
     on_failure: always
-    on_start: false
+    on_start: never
