@@ -29,7 +29,7 @@ install:
 script:
   - cd $HOME/build/ionic-team/starters && npm run src:build
   - npm run starters:build -- angular/community/oktadeveloper/jhipster
-  - npm run starters:test -- angular-community-oktadeveloper-jhipster
+  # npm run starters:test -- angular-community-oktadeveloper-jhipster
   - cd build/angular-community-oktadeveloper-jhipster
   - npm install && npm test
   - ls -la .
