@@ -32,19 +32,27 @@ ionic start ionic4j oktadeveloper/jhipster --type angular
 You can also install it using the [Ionic for JHipster Module](https://github.com/oktadeveloper/generator-jhipster-ionic):
 
 ```bash
-npm install -g generator-jhipster-ionic ionic @angular/cli
-yo jhipster-ionic
+npm install -g generator-jhipster-ionic @ionic/cli @angular/cli
+ionic4j
 ```
 
 This module allows you to generate entities using:
 
 ```bash	
-yo jhipster-ionic:entity <name>	
+ionic4j entity <name>	
 ```
 
 Or by importing JDL:
 
 ```bash
+ionic4j import-jdl <file.jdl>
+```
+
+**NOTE:** If you have any issues with the commands above, you can also use the `yo jhipster-ionic` equivalents.
+
+```bash
+yo jhipster-ionic # create an app
+yo jhipster-ionic:entity <name>	
 yo jhipster-ionic:import-jdl <file.jdl>
 ```
 
