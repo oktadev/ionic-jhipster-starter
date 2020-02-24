@@ -1,21 +1,22 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "../out-tsc/spec",
+    "outDir": "./out-tsc/spec",
     "allowJs": true,
     "esModuleInterop": true,
     "types": [
       "jasmine",
-      "jest",
-      "node"
+      "node",
+      "jest"
     ]
   },
   "files": [
-    "zone-flags.ts",
-    "polyfills.ts"
+    "src/test.ts",
+    "src/zone-flags.ts",
+    "src/polyfills.ts"
   ],
   "include": [
-    "**/*.spec.ts",
-    "**/*.d.ts"
+    "src/**/*.spec.ts",
+    "src/**/*.d.ts"
   ]
 }
