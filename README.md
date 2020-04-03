@@ -108,9 +108,7 @@ There are a number of scripts in `package.json` you can use to run tests:
 "test:watch": "jest --watch",
 "test:ci": "jest --runInBand",
 "test:coverage": "jest --coverage",
-"e2e": "npm run e2e-update && npm run e2e-test",
-"e2e-test": "protractor ./e2e/protractor.conf.js",
-"e2e-update": "node node_modules/webdriver-manager/bin/webdriver-manager update --gecko false"
+"e2e": "ng e2e --protractorConfig=e2e/protractor.conf.js"
 ```
 
 ### Unit Tests
@@ -149,10 +147,9 @@ Add your pages into the `/pages` folder and your tests into the `/spec` folder.
 
 See the example end-to-end test in [`e2e/spec/app.e2e-spec.ts`](e2e/spec/app.e2e-spec.ts).
 
-To run the e2e tests, start your app, then run the tests (in two separate terminal windows):
+To run the e2e tests:
 
 ```bash
-ionic serve
 npm run e2e
 ```
 
