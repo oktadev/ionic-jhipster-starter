@@ -10,7 +10,7 @@
       "test:ci": "jest --runInBand",
       "test:coverage": "jest --coverage",
       "e2e": "npm run e2e-update && npm run e2e-test",
-      "e2e-test": "ng e2e - -protractorConfig=protractor.conf.js",
+      "e2e-test": "ng e2e --protractorConfig=e2e/protractor.conf.js",
       "e2e-update": "node node_modules/webdriver-manager/bin/webdriver-manager update --gecko false"
     },
     "dependencies": {

@@ -31,7 +31,7 @@ script:
   - npm run starters:build -- angular/community/oktadeveloper/jhipster
   - cd build/angular-community-oktadeveloper-jhipster
   - npm install && npm test
-  - ng e2e --protractorConfig=protractor.conf.js
+  - npm run e2e
 notifications:
   webhooks:
     on_success: always
