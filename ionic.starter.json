@@ -17,7 +17,7 @@
       "@ionic-native/camera": "5.23.0",
       "@ngx-translate/core": "12.1.2",
       "@ngx-translate/http-loader": "4.0.0",
-      "ngx-webstorage": "5.0.0",
+      "ngx-webstorage": "4.0.2",
       "ng-jhipster": "0.12.0",
       "@fortawesome/angular-fontawesome": "0.6.1",
       "@fortawesome/fontawesome-svg-core": "1.2.28",
