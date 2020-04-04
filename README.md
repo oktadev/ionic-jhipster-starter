@@ -108,7 +108,7 @@ There are a number of scripts in `package.json` you can use to run tests:
 "test:watch": "jest --watch",
 "test:ci": "jest --runInBand",
 "test:coverage": "jest --coverage",
-"e2e": "ng e2e --protractorConfig=e2e/protractor.conf.js"
+"e2e": "ng e2e --port 8100"
 ```
 
 ### Unit Tests
