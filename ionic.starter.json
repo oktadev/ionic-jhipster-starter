@@ -64,12 +64,10 @@
         "<rootDir>/e2e/"
       ],
       "collectCoverageFrom": [
-        "**/*.{ts}",
-        "!**/*d.{ts}",
-        "!**/*interface.{ts}",
-        "!**/*module.{ts}",
-        "!**/*main.{ts}",
-        "!**/node_modules/**"
+        "src/app/**/*.{js,ts}",
+        "!src/app/**/index.ts",
+        "!src/app/**/*.module.ts",
+        "!<rootDir>/node_modules/"
       ],
       "moduleFileExtensions": [
         "ts",
