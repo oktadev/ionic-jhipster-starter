@@ -9,7 +9,7 @@
       "test:watch": "jest --watch",
       "test:ci": "jest --runInBand",
       "test:coverage": "jest --coverage",
-      "e2e": "ng e2e"
+      "e2e": "ng e2e --port 8100"
     },
     "dependencies": {
       "@ionic-native/camera": "5.23.0",
