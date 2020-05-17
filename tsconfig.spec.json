@@ -3,6 +3,7 @@
   "compilerOptions": {
     "outDir": "./out-tsc/spec",
     "allowJs": true,
+    "emitDecoratorMetadata": true,
     "esModuleInterop": true,
     "types": [
       "jasmine",
@@ -12,7 +13,6 @@
   },
   "files": [
     "src/test.ts",
-    "src/zone-flags.ts",
     "src/polyfills.ts"
   ],
   "include": [

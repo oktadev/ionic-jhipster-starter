@@ -10,7 +10,7 @@ describe('UserRouteAccessService', () => {
   }));
 
   it('should be created', () => {
-    const service: UserRouteAccessService = TestBed.get(UserRouteAccessService);
+    const service: UserRouteAccessService = TestBed.inject(UserRouteAccessService);
     expect(service).toBeTruthy();
   });
 });
