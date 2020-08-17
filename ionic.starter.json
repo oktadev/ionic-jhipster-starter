@@ -1,6 +1,6 @@
 {
   "name": "JHipster Starter",
-  "baseref": "5615fe544e9f271a77aeb5aae787976a96a47ff6",
+  "baseref": "f9d5b747699856e01788092154463110678b6d94",
   "welcome": "Welcome to the \u001b[34m\u001b[1mIonic\u001b[22m\u001b[39m \u001b[32m\u001b[1mJ\u001b[22m\u001b[39m\u001b[31m\u001b[1mHipster\u001b[22m\u001b[39m Starter!\n\nFor more details, please see the project's README: \u001b[1mhttps://github.com/oktadeveloper/ionic-jhipster-starter/blob/master/README.md\u001b[22m",
   "packageJson": {
     "scripts": {
@@ -12,28 +12,28 @@
       "e2e": "ng e2e --port 8100"
     },
     "dependencies": {
-      "@ionic-native/camera": "5.25.0",
-      "@ngx-translate/core": "12.1.2",
-      "@ngx-translate/http-loader": "4.0.0",
-      "ngx-webstorage": "5.0.0",
-      "ng-jhipster": "0.13.0",
-      "@fortawesome/angular-fontawesome": "0.6.1",
-      "@fortawesome/fontawesome-svg-core": "1.2.28",
-      "@fortawesome/free-solid-svg-icons": "5.13.0",
-      "@ng-bootstrap/ng-bootstrap": "6.1.0"
+      "@ionic-native/camera": "5.28.0",
+      "@ngx-translate/core": "13.0.0",
+      "@ngx-translate/http-loader": "6.0.0",
+      "ngx-webstorage": "6.0.0",
+      "ng-jhipster": "0.14.0",
+      "@fortawesome/angular-fontawesome": "0.7.0",
+      "@fortawesome/fontawesome-svg-core": "1.2.30",
+      "@fortawesome/free-solid-svg-icons": "5.14.0",
+      "@ng-bootstrap/ng-bootstrap": "7.0.0"
     },
     "devDependencies": {
-      "generator-jhipster": "6.8.0",
-      "@types/jest": "25.2.2",
+      "generator-jhipster": "6.10.1",
+      "@types/jest": "26.0.10",
       "html-loader": "1.1.0",
       "ionic-mocks-jest": "1.3.3",
       "istanbul-instrumenter-loader": "3.0.1",
-      "jest": "26.0.1",
-      "jest-localstorage-mock": "2.4.2",
-      "jest-preset-angular": "8.2.0",
+      "jest": "26.4.0",
+      "jest-localstorage-mock": "2.4.3",
+      "jest-preset-angular": "8.2.1",
       "null-loader": "4.0.0",
       "prettier": "2.0.5",
-      "ts-loader": "7.0.4",
+      "ts-loader": "8.0.2",
       "tslint-config-prettier": "1.18.0"
     },
     "cordova": {
