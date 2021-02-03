@@ -13,6 +13,7 @@
     },
     "dependencies": {
       "@ionic-native/camera": "5.31.1",
+      "@ionic-native/splash-screen": "5.31.1",
       "@ngx-translate/core": "13.0.0",
       "@ngx-translate/http-loader": "6.0.0",
       "ngx-webstorage": "7.0.1",
