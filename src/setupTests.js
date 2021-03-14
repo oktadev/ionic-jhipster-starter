@@ -8,3 +8,8 @@ global.matchMedia = global.matchMedia || function() {
     removeListener: function() {}
   }
 }
+
+/**
+ * fix: `window.URL.createObjectURL is not a function` when running tests
+ */
+window.URL.createObjectURL = () => {}
