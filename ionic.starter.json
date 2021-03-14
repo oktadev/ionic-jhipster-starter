@@ -19,7 +19,6 @@
       "@ngx-translate/core": "13.0.0",
       "@ngx-translate/http-loader": "6.0.0",
       "ngx-webstorage": "7.0.1",
-      "ng-jhipster": "0.16.0",
       "@fortawesome/angular-fontawesome": "0.8.1",
       "@fortawesome/fontawesome-svg-core": "1.2.34",
       "@fortawesome/free-solid-svg-icons": "5.15.2",
