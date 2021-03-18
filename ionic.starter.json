@@ -36,7 +36,8 @@
       "null-loader": "4.0.1",
       "prettier": "2.2.1",
       "ts-loader": "8.0.14",
-      "tslint-config-prettier": "1.18.0"
+      "tslint-config-prettier": "1.18.0",
+      "webpack": "4.46.0"
     },
     "cordova": {
       "plugins": {
