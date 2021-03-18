@@ -1,7 +1,7 @@
 {
   "name": "JHipster Starter",
   "baseref": "da07ea3d47ba6d0190f1446ccb39788d760d63e4",
-  "welcome": "Welcome to the \u001b[34m\u001b[1mIonic\u001b[22m\u001b[39m \u001b[32m\u001b[1mJ\u001b[22m\u001b[39m\u001b[31m\u001b[1mHipster\u001b[22m\u001b[39m Starter!\n\nFor more details, please see the project's README: \u001b[1mhttps://github.com/oktadeveloper/ionic-jhipster-starter/blob/master/README.md\u001b[22m",
+  "welcome": "Welcome to the \u001b[34m\u001b[1mIonic\u001b[22m\u001b[39m \u001b[32m\u001b[1mJ\u001b[22m\u001b[39m\u001b[31m\u001b[1mHipster\u001b[22m\u001b[39m Starter!\n\nFor more details, please see the project's README: \u001b[1mhttps://github.com/oktadeveloper/ionic-jhipster-starter/blob/main/README.md\u001b[22m",
   "packageJson": {
     "scripts": {
       "start": "ionic serve",
