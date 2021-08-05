@@ -5,7 +5,7 @@
   "packageJson": {
     "scripts": {
       "start": "ionic serve",
-      "build": "ionic build"
+      "build": "ionic build",
       "test": "jest",
       "test:watch": "jest --watch",
       "test:ci": "jest --runInBand",
