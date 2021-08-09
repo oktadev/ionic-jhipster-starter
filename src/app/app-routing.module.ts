@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', loadChildren: './pages/welcome/welcome.module#WelcomePageModule' },
-  { path: 'tabs', loadChildren: './pages/tabs/tabs.module#TabsPageModule' },
-  { path: 'login', loadChildren: './pages/login/login.module#LoginPageModule' },
-  { path: 'signup', loadChildren: './pages/signup/signup.module#SignupPageModule' },
+  { path: '', loadChildren: () => import('./pages/welcome/welcome.module').then(m => m.WelcomePageModule) },
+  { path: 'tabs', loadChildren: () => import('./pages/tabs/tabs.module').then(m => m.TabsPageModule) },
+  { path: 'login', loadChildren: () => import('./pages/login/login.module').then(m => m.LoginPageModule) },
+  { path: 'signup', loadChildren: () => import('./pages/signup/signup.module').then(m => m.SignupPageModule) },
   { path: 'accessdenied', redirectTo: '', pathMatch: 'full' }
 ];
 @NgModule({
