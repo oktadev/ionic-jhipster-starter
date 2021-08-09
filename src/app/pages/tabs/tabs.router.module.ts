@@ -12,7 +12,7 @@ const routes: Routes = [
         children: [
           {
             path: '',
-            loadChildren: '../home/home.module#HomePageModule'
+            loadChildren: () => import('../home/home.module').then(m => m.HomePageModule)
           }
         ]
       },
@@ -21,7 +21,7 @@ const routes: Routes = [
         children: [
           {
             path: '',
-            loadChildren: '../entities/entities.module#EntitiesPageModule'
+            loadChildren: () => import('../entities/entities.module').then(m => m.EntitiesPageModule)
           }
         ]
       },
@@ -30,7 +30,7 @@ const routes: Routes = [
         children: [
           {
             path: '',
-            loadChildren: '../account/account.module#AccountPageModule'
+            loadChildren: () => import('../account/account.module').then(m => m.AccountPageModule)
           }
         ]
       },
