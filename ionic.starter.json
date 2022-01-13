@@ -1,6 +1,6 @@
 {
   "name": "JHipster Starter",
-  "baseref": "093eaa92f319689bc3a314bc23f212ddcff4ed1e",
+  "baseref": "720a6446813e5d211807b5759b5f56caae63a195",
   "welcome": "Welcome to the \u001b[34m\u001b[1mIonic\u001b[22m\u001b[39m \u001b[32m\u001b[1mJ\u001b[22m\u001b[39m\u001b[31m\u001b[1mHipster\u001b[22m\u001b[39m Starter!\n\nFor more details, please see the project's README: \u001b[1mhttps://github.com/oktadev/ionic-jhipster-starter/blob/main/README.md\u001b[22m",
   "packageJson": {
     "scripts": {
@@ -13,30 +13,30 @@
       "e2e": "ng e2e --port 8100"
     },
     "dependencies": {
-      "@ionic-native/core": "5.35.0",
-      "@ionic-native/camera": "5.35.0",
-      "@ionic-native/splash-screen": "5.35.0",
-      "@ionic-native/status-bar": "5.35.0",
-      "@ngx-translate/core": "13.0.0",
-      "@ngx-translate/http-loader": "6.0.0",
-      "ngx-webstorage": "8.0.0",
-      "@fortawesome/angular-fontawesome": "0.9.0",
+      "@ionic-native/core": "5.36.0",
+      "@ionic-native/camera": "5.36.0",
+      "@ionic-native/splash-screen": "5.36.0",
+      "@ionic-native/status-bar": "5.36.0",
+      "@ngx-translate/core": "14.0.0",
+      "@ngx-translate/http-loader": "7.0.0",
+      "ngx-webstorage": "9.0.0",
+      "@fortawesome/angular-fontawesome": "0.10.1",
       "@fortawesome/fontawesome-svg-core": "1.2.36",
       "@fortawesome/free-solid-svg-icons": "5.15.4",
-      "@ng-bootstrap/ng-bootstrap": "10.0.0"
+      "@ng-bootstrap/ng-bootstrap": "11.0.0"
     },
     "devDependencies": {
-      "generator-jhipster": "7.1.0",
-      "@types/jest": "26.0.24",
-      "html-loader": "2.1.2",
+      "generator-jhipster": "7.5.0",
+      "@types/jest": "27.4.0",
+      "html-loader": "3.1.0",
       "ionic-mocks-jest": "1.3.3",
       "istanbul-instrumenter-loader": "3.0.1",
-      "jest": "27.0.6",
-      "jest-localstorage-mock": "2.4.14",
-      "jest-preset-angular": "9.0.5",
+      "jest": "27.4.7",
+      "jest-localstorage-mock": "2.4.18",
+      "jest-preset-angular": "11.0.1",
       "null-loader": "4.0.1",
-      "prettier": "2.3.2",
-      "ts-loader": "9.2.5"
+      "prettier": "2.5.1",
+      "ts-loader": "9.2.6"
     },
     "cordova": {
       "plugins": {
